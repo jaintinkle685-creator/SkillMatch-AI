@@ -1,0 +1,26 @@
+SkillMatch AI - Student Registration / Cohort Enhancement
+
+Changes in this version:
+1. Student self-registration now collects the same major profile fields used by the demo students: CGPA, experience, preferred role, interests, academic information, certifications, projects, internships/training, technical experience, languages/tools, achievements, and initial skills with proficiency.
+2. Student registration data is saved to the persistent SQLite student profile and skill portfolio.
+3. Student Cohort KPI uses the authoritative backend cohort count so the dashboard total matches the roster immediately.
+4. Added deep student role analysis using skill proficiency, interests/profile evidence, experience, and stated preference. The system stores an AI-recommended role and confidence score.
+5. Added an Admin "Analyze & Assign Roles" action to re-run role analysis for the complete cohort.
+6. Admins can add AND remove skills from registered students. Changes are synchronized to the student's own Skill Portfolio.
+7. Admin skill management is restricted to students in the admin's own cohort.
+8. Existing team-generation assigned_role is preserved; AI recommended role is stored separately so team assignment remains controlled by the existing optimization engine.
+9. No existing demo database is bundled or overwritten.
+
+10. Deep sample-student deduplication: legacy std-001..std-020 records, account-scoped copies, and matching sample fingerprints are collapsed into exactly one canonical copy per admin account.
+11. Workspace autosave normalization now prevents stale localStorage snapshots from recreating legacy sample students after the cohort loader has cleaned them.
+12. Sample loading now waits for queued workspace writes before normalization, preventing an autosave race from restoring duplicate students.
+13. The combined "Load Sample Projects & Students" flow now uses the same persistent idempotent sample-student backend path instead of writing a second frontend copy first.
+14. Real self-registered student accounts remain untouched; sample cleanup is scoped to administrator-owned sample records.
+
+
+15. Final project isolation fix: demo/sample projects now use globally unique account-scoped IDs, preventing one account from replacing another account's four sample projects.
+16. Repeated demo/sample-project loading is idempotent and keeps exactly four sample projects per administrator account.
+17. Legacy preset-* demo projects are removed only when they belong to the same administrator, with dependent teams/reports/project-skill rows cleaned first.
+18. Added requirements.txt and automatic Flask dependency setup to RUN_PROJECT.bat for clean Windows installations.
+19. Local server now binds to 127.0.0.1 instead of exposing the academic demo server to the local network.
+20. README now documents the local Flask/SQLite deployment model and clarifies that GitHub Pages cannot run the Python backend.

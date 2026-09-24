@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillMatch AI — Academic Student Skill Matching &amp; Optimal Team Formation</title>
+<meta content="Academic student skill matching and optimal project team formation system for CS-402 AOA." name="description"/>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#2563eb" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<link href="icons/icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="icons/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="icons/icon-192.png" rel="apple-touch-icon"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/print.css" media="print" rel="stylesheet"/>
+<!-- Lucide-inspired SVG icon system embedded inline for crisp zero-latency rendering -->
+</head>
+<body>
+<!-- FULL ACADEMIC DETAILS, USER-FRIENDLY INTRODUCTION & LOGIN PORTAL -->
+<div class="hidden" id="auth-view">
+<div class="landing-page-container">
+<!-- Top Brand & Institutional Meta Bar -->
+<header class="landing-top-bar">
+<div class="landing-brand">
+<div class="brand-logo-icon">
+<svg fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+</div>
+<div>
+<h1 class="landing-brand-title">SkillMatch AI</h1>
+<span class="landing-brand-subtitle">Smart Student Project Allocation &amp; Team Formation Suite</span>
+</div>
+</div>
+<div class="landing-meta-badges">
+<span class="landing-badge"><span class="badge-dot"></span> CS-402 Capstone Lab</span>
+<span class="landing-badge">🏛️ SQLite Persistent DB</span>
+<span class="landing-badge">⚡ AOA Optimal Team Formation</span>
+</div>
+</header>
+<!-- Main Two-Column Content Grid -->
+<div class="landing-main-grid">
+<!-- LEFT COLUMN: Current Project Introduction -->
+<div class="landing-intro-col">
+  <div class="landing-card hero-intro-card">
+    <div class="hero-badge">🎓 Academic Team Formation System</div>
+    <h2 class="hero-headline">Academic Student Skill Matching &amp; Optimal Team Formation</h2>
+    <p class="hero-desc">
+      SkillMatch AI is the current CS-402 AOA project for forming balanced student teams from their recorded
+      skills and proficiency levels. The coordinator maintains the student cohort, enters each student's skills
+      manually, defines the project requirements, and then uses the system to analyze skills and generate
+      optimized project teams.
+    </p>
+    <div class="hero-stats-row">
+      <div class="stat-pill">
+        <span class="stat-num">01</span>
+        <span class="stat-label">Student Skill Registry</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num">01</span>
+        <span class="stat-label">Project Requirement Analysis</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num">01</span>
+        <span class="stat-label">Team Optimization Engine</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Coordinator Controlled Input</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-card how-it-works-card">
+    <h3 class="landing-section-title"><span>⚙️</span> Current Project Workflow</h3>
+    <p style="font-size: 0.86rem; color: var(--text-secondary); margin-bottom: 16px;">
+      The system follows a clear workflow from student data entry to final team formation.
+    </p>
+    <div class="simple-steps-grid">
+      <div class="step-card">
+        <div class="step-badge">Step 1</div>
+        <div class="step-icon">👥</div>
+        <h4>Student Cohort</h4>
+        <p>Add students using the same details maintained in the cohort and record their skills manually.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-badge">Step 2</div>
+        <div class="step-icon">📊</div>
+        <h4>Student Skills &amp; Levels</h4>
+        <p>Record each student's skills manually along with their proficiency levels. These values are used as input for system analysis.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-badge">Step 3</div>
+        <div class="step-icon">🔍</div>
+        <h4>Project Analysis</h4>
+        <p>Analyze the current project requirements and identify the skills and roles needed for the project.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-badge">Step 4</div>
+        <div class="step-icon">⚡</div>
+        <h4>Team Formation</h4>
+        <p>Use the team optimization engine to form balanced teams and review the current team formation overview.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-features-grid">
+    <div class="landing-feat-card">
+      <div class="feat-icon">🧑‍🎓</div>
+      <div class="feat-content">
+        <h4>Manual Student Skills</h4>
+        <p>Student skills and proficiency levels are entered explicitly rather than automatically assumed.</p>
+      </div>
+    </div>
+    <div class="landing-feat-card">
+      <div class="feat-icon">🔎</div>
+      <div class="feat-content">
+        <h4>Requirement Analysis</h4>
+        <p>The system analyzes the project's stated requirements to determine relevant skills and roles.</p>
+      </div>
+    </div>
+    <div class="landing-feat-card">
+      <div class="feat-icon">⚖️</div>
+      <div class="feat-content">
+        <h4>Balanced Team Formation</h4>
+        <p>Student skill information is used by the optimization engine to build balanced project teams.</p>
+      </div>
+    </div>
+    <div class="landing-feat-card">
+      <div class="feat-icon">💾</div>
+      <div class="feat-content">
+        <h4>Persistent Project Data</h4>
+        <p>Student, project, skill, and team data is retained during use of the application.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- RIGHT COLUMN: Highly Professional Faculty Login & Registration Portal -->
+<div class="landing-portal-col">
+<div class="auth-card professional-auth-card">
+<div class="auth-header">
+<div class="auth-logo">
+<svg fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="28">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+</div>
+<div class="portal-security-badge">
+<span>🔒</span> Secure Academic Access
+              </div>
+<h2 class="auth-title">SkillMatch Portal</h2>
+<p class="auth-subtitle">Sign in to manage student skill portfolios, capstone project requirements, and optimal team formation</p>
+</div>
+<!-- Auth Tabs: Login vs Register -->
+<div class="auth-tabs">
+<button class="auth-tab active" id="tab-auth-login" type="button">Sign In</button>
+<button class="auth-tab" id="tab-auth-signup" type="button">Create Coordinator Account</button>
+<button class="auth-tab" id="tab-auth-student-signup" type="button">Student Registration</button>
+</div>
+<!-- 1. LOGIN FORM -->
+<form class="auth-form" id="form-auth-login">
+<div class="instruction-alert-box" id="login-feedback-alert" style="display: none;"></div>
+<div class="form-group">
+<label class="form-label" for="login-email">Email, Roll No. or Faculty ID *</label>
+<div class="input-with-icon-wrap">
+<span class="input-icon">✉️</span>
+<input autocomplete="off" class="form-control" id="login-email" placeholder="e.g. student@college.edu or Roll No." required="" type="text"/>
+</div>
+<div class="invalid-feedback" id="feedback-login-email"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="login-password">Password *</label>
+<div class="input-with-icon-wrap password-input-wrap">
+<span class="input-icon">🔒</span>
+<input autocomplete="off" class="form-control" id="login-password" placeholder="Enter your account password" required="" type="password"/>
+<button class="password-toggle-btn" id="toggle-login-password" title="Toggle password visibility" type="button">👁️</button>
+</div>
+<div class="caps-lock-badge" id="caps-lock-warning" style="display: none;">
+<span>⚠️</span> Caps Lock is ON
+                </div>
+<div class="invalid-feedback" id="feedback-login-password"></div>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; margin: 12px 0 8px 0; font-size: 0.84rem; color: var(--text-secondary);">
+<label style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;">
+<input checked="" id="login-remember-me" style="cursor: pointer; width: 16px; height: 16px;" type="checkbox"/>
+<span>Remember login on this computer</span>
+</label>
+</div>
+<button class="btn btn-primary btn-portal-submit" id="btn-login" style="width: 100%; height: 42px; font-weight: 700; margin-top: 6px;" type="submit">
+<span>🔐</span> Sign In to Academic Portal
+              </button>
+<!-- Dedicated Professional Demo Quick-Access Card -->
+<div class="demo-access-card" style="margin-top: 16px;">
+<div class="demo-access-header">
+<span class="demo-badge">⚡ INSTANT DEMO ACCESS</span>
+<span class="demo-tag">Sample Data Ready</span>
+</div>
+<p class="demo-access-desc">
+                  Explore immediately with pre-loaded profiles:
+                </p>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<button class="btn-demo-instant" id="btn-quick-demo-login" style="background: linear-gradient(135deg, #4f46e5, #4338ca); border-color: #4f46e5; color: white;" title="1-Click Coordinator Login" type="button">
+<span>🛡️</span> Enter as Demo Coordinator (Prof. Rajesh Sharma)
+                  </button>
+</div>
+<div class="demo-credentials-row" id="demo-account-hint" style="margin-top: 8px;" title="Click to auto-fill credentials">
+<span>Coordinator: <code>rajesh.sharma@itas.edu.in</code> / <code>admin123</code></span>
+</div>
+</div>
+</form>
+<!-- 2. SIGNUP FORM -->
+<form class="auth-form" id="form-auth-signup" novalidate="" style="display: none;">
+<div class="instruction-alert-box warning" id="signup-feedback-alert" style="display: none;"></div>
+<!-- Coordinator Account Information -->
+<!-- Only coordinator/faculty accounts can be created from this portal. Student accounts are managed by the coordinator inside the academic workspace. -->
+<!-- Common Personal Info -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="signup-name">Full Name *</label>
+<input class="form-control" id="signup-name" placeholder="e.g. Aarav Sharma" required="" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-name"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="signup-email">Institutional Email *</label>
+<input class="form-control" id="signup-email" placeholder="e.g. student@college.edu" required="" type="email"/>
+<div class="invalid-feedback" id="feedback-signup-email"></div>
+</div>
+</div>
+<!-- Passwords -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="signup-password">Password (min 4 chars) *</label>
+<div class="password-input-wrap">
+<input class="form-control" id="signup-password" minlength="4" placeholder="••••••••" required="" type="password"/>
+<button class="password-toggle-btn" id="toggle-signup-password" title="Toggle password visibility" type="button">👁️</button>
+</div>
+<div class="invalid-feedback" id="feedback-signup-password"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="signup-confirm-password">Confirm Password *</label>
+<div class="password-input-wrap">
+<input class="form-control" id="signup-confirm-password" minlength="4" placeholder="••••••••" required="" type="password"/>
+<button class="password-toggle-btn" id="toggle-signup-confirm-password" title="Toggle password visibility" type="button">👁️</button>
+</div>
+<div class="invalid-feedback" id="feedback-signup-confirm-password"></div>
+</div>
+</div>
+<!-- COORDINATOR / FACULTY SPECIFIC FIELDS -->
+<div id="signup-admin-fields">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="signup-faculty-id">Faculty / Employee ID *</label>
+<input class="form-control" id="signup-faculty-id" placeholder="e.g. FAC-CSE-2026" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-faculty-id"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="signup-college">College / University *</label>
+<input class="form-control" id="signup-college" placeholder="e.g. Institute of Technology" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-college"></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="signup-dept">Department *</label>
+<input class="form-control" id="signup-dept" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-dept"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="signup-designation">Designation *</label>
+<input class="form-control" id="signup-designation" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-designation"></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="signup-hod">Head of Department (HOD) *</label>
+<input class="form-control" id="signup-hod" placeholder="e.g. Dr. S. K. Gupta" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-hod"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="signup-dean">Dean / Principal *</label>
+<input class="form-control" id="signup-dean" placeholder="e.g. Prof. M. R. Venkat" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-dean"></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="signup-office">Office Location / Cabin</label>
+<input class="form-control" id="signup-office" placeholder="e.g. Room 402, Block B" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-office"></div>
+</div>
+<div class="form-group">
+<label class="form-label" for="signup-research">Research Domain / Specialization</label>
+<input class="form-control" id="signup-research" placeholder="e.g. Algorithms, Networks" type="text"/>
+<div class="invalid-feedback" id="feedback-signup-research"></div>
+</div>
+</div>
+</div>
+<button class="btn btn-primary" id="btn-signup" style="width: 100%; margin-top: 10px; font-weight: 700; height: 44px;" type="submit">
+<span>✨</span> Register Coordinator Account &amp; Enter Portal
+              </button>
+<p style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 12px;">
+                Accounts are permanently stored in the SQLite database and persist across browser reloads and server restarts.
+              </p>
+</form>
+<!-- 3. STUDENT SELF-REGISTRATION -->
+<form class="auth-form" id="form-auth-student-signup" novalidate="" style="display:none;">
+<div class="instruction-alert-box warning" id="student-signup-feedback-alert" style="display:none;"></div>
+<p style="font-size:.82rem;color:var(--text-secondary);margin:-2px 0 14px;line-height:1.5;">Register yourself using the cohort code provided by your coordinator. After registration you will enter your own Skill Portfolio dashboard.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-name">Full Name *</label><input class="form-control" id="student-signup-name" required type="text" placeholder="e.g. Rahul Sharma"/><div class="invalid-feedback" id="feedback-student-signup-name"></div></div>
+<div class="form-group"><label class="form-label" for="student-signup-email">Email *</label><input class="form-control" id="student-signup-email" required type="email" placeholder="e.g. rahul@college.edu"/><div class="invalid-feedback" id="feedback-student-signup-email"></div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-password">Password (min 4 chars) *</label><div class="password-input-wrap"><input class="form-control" id="student-signup-password" minlength="4" required type="password" placeholder="••••••••"/><button class="password-toggle-btn" id="toggle-student-signup-password" title="Toggle password visibility" type="button">👁️</button></div></div>
+<div class="form-group"><label class="form-label" for="student-signup-confirm">Confirm Password *</label><div class="password-input-wrap"><input class="form-control" id="student-signup-confirm" minlength="4" required type="password" placeholder="••••••••"/><button class="password-toggle-btn" id="toggle-student-signup-confirm" title="Toggle password visibility" type="button">👁️</button></div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-roll">Roll / Registration No. *</label><input class="form-control" id="student-signup-roll" required type="text" placeholder="e.g. 24EJCCA001"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-cohort">Cohort Code *</label><input class="form-control" id="student-signup-cohort" required type="text" placeholder="e.g. SM-A1B2C3D4" style="text-transform:uppercase;"/><div style="font-size:.72rem;color:var(--text-muted);margin-top:4px;">Get this code from your coordinator.</div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-college">College / University *</label><input class="form-control" id="student-signup-college" required type="text" placeholder="Your college name"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-branch">Branch *</label><input class="form-control" id="student-signup-branch" required type="text" placeholder="e.g. CSE - AI & ML"/></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-section">Section *</label><input class="form-control" id="student-signup-section" required type="text" placeholder="e.g. A"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-semester">Semester *</label><select class="form-control" id="student-signup-semester" required><option value="">Select semester</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-cgpa">CGPA</label><input class="form-control" id="student-signup-cgpa" type="number" min="0" max="10" step="0.01" placeholder="e.g. 8.7"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-experience">Experience Level</label><select class="form-control" id="student-signup-experience"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-preferred-role">Preferred Role (optional)</label><select class="form-control" id="student-signup-preferred-role"><option value="">Let AI recommend my role</option><option>AI Developer</option><option>Data Scientist</option><option>Backend Architect</option><option>Database Engineer</option><option>UI/UX Designer</option><option>Frontend Developer</option><option>Cloud/DevOps Engineer</option><option>Cybersecurity Engineer</option><option>Research Lead</option><option>Full Stack Engineer</option></select></div>
+<div class="form-group"><label class="form-label" for="student-signup-interests">Interests</label><input class="form-control" id="student-signup-interests" placeholder="e.g. AI, Web, Cloud, Research" type="text"/></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-academic">Academic Information</label><input class="form-control" id="student-signup-academic" placeholder="Subjects, academic strengths, etc." type="text"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-certifications">Certifications</label><input class="form-control" id="student-signup-certifications" placeholder="e.g. IBM ML, AWS, NPTEL" type="text"/></div>
+</div>
+<div class="form-group"><label class="form-label" for="student-signup-projects">Projects</label><textarea class="form-control" id="student-signup-projects" rows="2" placeholder="Projects completed or currently building"></textarea></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-internships">Internships / Training</label><input class="form-control" id="student-signup-internships" placeholder="Internships, industrial training, etc." type="text"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-technical">Technical Experience</label><input class="form-control" id="student-signup-technical" placeholder="What you have practically worked with" type="text"/></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<div class="form-group"><label class="form-label" for="student-signup-tools">Languages / Tools</label><input class="form-control" id="student-signup-tools" placeholder="Python, Java, Git, VS Code, etc." type="text"/></div>
+<div class="form-group"><label class="form-label" for="student-signup-achievements">Achievements</label><input class="form-control" id="student-signup-achievements" placeholder="Awards, hackathons, publications, etc." type="text"/></div>
+</div>
+<div class="card" style="margin:8px 0 10px;padding:14px;background:var(--bg-subtle);border:1.5px solid var(--primary);">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;"><div><div style="font-weight:800;color:var(--primary);">🧠 Initial Skills &amp; Proficiency</div><div style="font-size:.74rem;color:var(--text-muted);">Add the skills you already know. The system will deeply analyze these skills and assign an AI-recommended role.</div></div><button class="btn btn-secondary btn-sm" id="btn-student-signup-add-skill" type="button">➕ Add Skill</button></div>
+<div id="student-signup-skills-container" style="display:flex;flex-direction:column;gap:8px;"></div>
+<div id="student-signup-skills-empty" style="font-size:.74rem;color:var(--text-muted);padding:6px 0;">No skills added yet. You can add them now or complete them later in Skill Portfolio.</div>
+</div>
+<button class="btn btn-primary" id="btn-student-signup" style="width:100%;margin-top:10px;font-weight:700;height:44px;" type="submit"><span>🎓</span> Register & Open Skill Portfolio</button>
+<p style="font-size:.76rem;color:var(--text-muted);text-align:center;margin-top:10px;">Your account and portfolio are stored permanently in the database.</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="app-container">
+<!-- Left Navigation Sidebar -->
+<aside class="app-sidebar no-print">
+<div class="sidebar-header">
+<div class="brand-logo-icon">
+<!-- Academic Crest / Constellation SVG -->
+<svg fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+</div>
+<div class="brand-text">
+<h1>SkillMatch AI</h1>
+<span>Academic AOA Optimization</span>
+</div>
+</div>
+<nav class="sidebar-nav">
+<div class="nav-section-title">Core Dashboards</div>
+<a class="nav-item active" data-view="main" id="nav-item-main">
+<span class="icon">🏠</span>
+<span>Main Dashboard</span>
+</a>
+<a class="nav-item" data-view="myskills" id="nav-item-myskills">
+<span class="icon">💼</span>
+<span>My Skills Portfolio</span>
+<span class="nav-badge success" id="sidebar-myskills-count">Portfolio</span>
+</a>
+<a class="nav-item" data-view="project" id="nav-item-project">
+<span class="icon">🔍</span>
+<span>Project Analysis</span>
+</a>
+<a class="nav-item" data-view="students" id="nav-item-students">
+<span class="icon">👨‍🎓</span>
+<span>Student Cohort</span>
+</a>
+<div class="nav-section-title">Team Engine</div>
+<a class="nav-item" data-view="optimizer" id="nav-item-optimizer">
+<span class="icon">⚙️</span>
+<span>Team Optimization</span>
+</a>
+<a class="nav-item" data-view="results" id="nav-item-results">
+<span class="icon">🏆</span>
+<span>Team Results</span>
+<span class="nav-badge" id="sidebar-team-count">4 Teams</span>
+</a>
+<a class="nav-item" data-view="explain" id="nav-item-explain">
+<span class="icon">💡</span>
+<span>Explain &amp; What-If</span>
+</a>
+<div class="nav-section-title">Academics &amp; Analytics</div>
+<a class="nav-item" data-view="algo" id="nav-item-algo">
+<span class="icon">📈</span>
+<span>AOA Algorithm Analysis</span>
+</a>
+<a class="nav-item" data-view="reports" id="nav-item-reports">
+<span class="icon">📄</span>
+<span>Team Formation Overview</span>
+</a>
+
+</nav>
+<!-- Sidebar Footer / Teacher Profile Pill -->
+<div class="sidebar-footer">
+<div class="admin-mini-card" id="open-teacher-profile-sidebar" title="Click to edit Teacher / Project Admin profile">
+<div class="admin-avatar" id="sidebar-admin-avatar">RK</div>
+<div class="admin-info">
+<div class="admin-name" id="sidebar-admin-name">Prof. Rajesh Sharma</div>
+<div class="admin-title" id="sidebar-admin-title">Project Coordinator</div>
+</div>
+<span style="color: #94a3b8; font-size: 0.9rem;">⚙️</span>
+</div>
+<button class="btn btn-secondary btn-sm" id="btn-sidebar-switch-account" style="width: 100%; margin-top: 8px; justify-content: center; font-size: 0.8rem; padding: 6px 10px;" title="Sign in to another faculty account or register new admin">
+<span>👤</span> Switch Account / Sign In
+        </button>
+<button class="btn btn-secondary btn-sm" id="btn-sidebar-logout" style="width: 100%; margin-top: 4px; justify-content: center; font-size: 0.8rem; padding: 6px 10px;" title="Sign out of current account">
+<span>🚪</span> Sign Out
+        </button>
+</div>
+</aside>
+<!-- Main Wrapper -->
+<div class="main-wrapper">
+<!-- Institutional Top Header -->
+<header class="top-header no-print">
+<div class="header-left" style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.92rem; color: var(--text-primary);">
+<span style="font-size: 1.1rem;">🏛️</span>
+<span id="header-college-name">Institute of Technology &amp; Advanced Sciences</span>
+<span style="color: var(--text-muted); font-weight: 300;">|</span>
+<span id="header-branch-name" style="color: var(--text-secondary); font-size: 0.85rem; font-weight: 500;">CSE-AI &amp; Systems</span>
+</div>
+
+</div>
+<div class="header-right">
+<button class="header-btn" id="btn-install-pwa" style="display: none; background: linear-gradient(135deg, #10b981, #059669); color: #fff;" title="Install SkillMatch AI as a Chrome Desktop App">
+<span>📲</span>
+<span>Install App</span>
+</button>
+<button class="header-btn" id="btn-header-open-auth" title="Sign In or Register Faculty Account">
+<span>👤</span>
+<span>Faculty Login</span>
+</button>
+<button class="header-btn" id="btn-quick-teacher-modal" title="View Teacher Profile">
+<span>👨‍🏫</span>
+<span id="header-admin-pill-name">Prof. Rajesh Sharma</span>
+</button>
+<button class="header-btn primary" id="btn-quick-generate-nav">
+<span>⚡</span>
+<span>Generate Teams</span>
+</button>
+<button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Dark / Light Academic Theme">
+<span id="theme-toggle-icon">🌙</span>
+</button>
+<button class="header-btn" id="btn-header-logout" style="color: var(--danger);" title="Sign Out of Portal">
+<span>🚪</span>
+</button>
+</div>
+</header>
+<!-- View Container Area -->
+<main class="page-container" id="view-container">
+<!-- 1. 🏠 MAIN DASHBOARD -->
+<section class="view-panel" id="view-main">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>🏠</span> Academic Overview Dashboard
+              </h2>
+<p class="page-header-subtitle">
+                Welcome back, <strong id="main-welcome-teacher">Prof. Rajesh Sharma</strong>. Real-time student skill
+                matrix and project allocation status.
+              </p>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+<button class="btn btn-secondary" id="btn-main-load-samples" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(168, 85, 247, 0.12)); border: 1px solid var(--primary); color: var(--primary); font-weight: 700;" title="Load curated 4 Capstone Projects and 20 Students">
+<span>📦</span> Load Sample Projects &amp; Students
+              </button>
+<button class="btn btn-secondary" id="btn-main-add-student">
+<span>➕</span> Add Student
+              </button>
+<button class="btn btn-primary" id="btn-main-new-project">
+<span>🔍</span> Analyze Project
+              </button>
+</div>
+</div>
+<!-- 5 KPI Cards -->
+<div class="grid-5-kpi">
+<div class="kpi-card" style="--kpi-accent: #3b82f6; --kpi-bg: var(--primary-light);">
+<div class="kpi-icon-box">📁</div>
+<div class="kpi-details">
+<div class="kpi-value" id="kpi-total-projects">4</div>
+<div class="kpi-label">Total Projects</div>
+<div class="kpi-subtext">Active Semester Capstones</div>
+</div>
+</div>
+<div class="kpi-card" style="--kpi-accent: #10b981; --kpi-bg: var(--success-light);">
+<div class="kpi-icon-box">👨‍🎓</div>
+<div class="kpi-details">
+<div class="kpi-value" id="kpi-total-students">20</div>
+<div class="kpi-label">Registered Students</div>
+<div class="kpi-subtext">Diverse Student Skillsets</div>
+</div>
+</div>
+<div class="kpi-card" style="--kpi-accent: #8b5cf6; --kpi-bg: rgba(139, 92, 246, 0.1);">
+<div class="kpi-icon-box">👥</div>
+<div class="kpi-details">
+<div class="kpi-value" id="kpi-teams-created">4</div>
+<div class="kpi-label">Teams Created</div>
+<div class="kpi-subtext">5 Members Per Team</div>
+</div>
+</div>
+<div class="kpi-card" style="--kpi-accent: #06b6d4; --kpi-bg: rgba(6, 182, 212, 0.1);">
+<div class="kpi-icon-box">🎯</div>
+<div class="kpi-details">
+<div class="kpi-value" id="kpi-avg-score">92%</div>
+<div class="kpi-label">Average Team Score</div>
+<div class="kpi-subtext">Algorithmic Harmony</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons Row -->
+<div class="card" style="margin-bottom: 28px; background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-subtle) 100%);">
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+<div>
+<h3 style="font-size: 1.1rem; font-weight: 700;">🚀 Quick Operational Workflow</h3>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">
+                  Define project requirements → Analyze student skills → Match project roles → Generate optimized teams.
+                </p>
+</div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap;">
+<button class="btn btn-secondary" id="btn-quick-create-proj">
+<span>📝</span> Create Project
+                </button>
+<button class="btn btn-secondary" id="btn-quick-add-student">
+<span>➕</span> Add Student
+                </button>
+<button class="btn btn-primary" id="btn-quick-gen-teams">
+<span>⚡</span> Generate Teams
+                </button>
+</div>
+</div>
+</div>
+<!-- Two Column Layout: Current Project Card & Student Skill Overview -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 24px;">
+<!-- Current Active Project -->
+<div class="card">
+<div class="card-header">
+<div>
+<div class="card-title">
+<span>📌</span> Active Project Under Evaluation
+                  </div>
+<div class="card-subtitle">Loaded into Optimization Engine</div>
+</div>
+<span class="badge badge-primary" id="main-active-proj-type">AI/ML &amp; Healthcare</span>
+</div>
+<h4 id="main-active-proj-name" style="font-size: 1.2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">
+                AI Healthcare Diagnostic System
+              </h4>
+<p id="main-active-proj-desc" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px;">
+                Early detection of pulmonary conditions using deep learning in Python, clinical research, asynchronous
+                microservices, and an intuitive clinician portal.
+              </p>
+<div style="margin-bottom: 18px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+<div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.04em;">
+                    Extracted Core Requirements (Points Form):
+                  </div>
+<span class="badge badge-neutral" id="main-active-proj-req-count" style="font-size: 0.72rem;">0
+                    Requirements</span>
+</div>
+<div class="req-points-grid" id="main-active-proj-skills">
+<!-- Rendered dynamically in points form with distinct theme colors -->
+</div>
+</div>
+<div style="display: flex; gap: 10px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+<button class="btn btn-secondary btn-sm" id="btn-main-edit-proj">
+<span>⚙️</span> Edit Requirements
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 💼 MY SKILLS: STUDENT SKILL PORTFOLIO -->
+<section class="view-panel" id="view-myskills" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>👋</span> Welcome, <span id="student-welcome-name">Student</span>
+</h2>
+<p class="page-header-subtitle">
+                My Skill Portfolio — add your skills and proficiency levels so the system can match your profile to suitable project roles.
+              </p>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+<button class="btn btn-primary" id="btn-open-add-my-skill">
+<span>➕</span> Add Skill to Portfolio
+              </button>
+</div>
+</div>
+<!-- Simple student portfolio summary -->
+<div class="card student-portfolio-intro" style="margin-bottom: 20px; padding: 18px 20px; border-left: 4px solid var(--primary);">
+<div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+<div>
+<div style="font-size:1rem; font-weight:800; color:var(--text-primary);">Your Skills</div>
+<div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">Add the skills you actually know. The system will use them for project and role matching.</div>
+</div>
+<div id="myskills-simple-count" style="font-size:0.9rem; font-weight:800; color:var(--primary);">0 skills saved</div>
+<div id="student-profile-summary" style="font-size:.78rem;color:var(--text-secondary);margin-top:5px;"></div>
+</div>
+</div>
+<!-- Skills Search and Filter Bar -->
+<div class="card" style="margin-bottom: 20px; padding: 14px 20px;">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div class="search-input-wrap" style="flex: 1; min-width: 250px;">
+<span class="search-icon">🔍</span>
+<input class="form-control" id="myskills-search-input" placeholder="Filter portfolio skills (e.g. Python, AI/ML, React, Database)..." type="text"/>
+</div>
+<div style="display: flex; gap: 10px; align-items: center;">
+<span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Sort:</span>
+<select class="form-control" id="myskills-sort-select" style="width: auto; padding: 6px 12px;">
+<option value="prof-desc">Proficiency (High to Low)</option>
+<option value="prof-asc">Proficiency (Low to High)</option>
+<option value="name-asc">Skill Name (A-Z)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Skill Cards Grid -->
+<div id="myskills-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 18px;">
+<!-- Populated dynamically by JS -->
+</div>
+</section>
+<!-- 2. 🔍 PROJECT ANALYSIS DASHBOARD -->
+<section class="view-panel" id="view-project" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>🔍</span> Project Requirement Analysis Dashboard
+              </h2>
+<p class="page-header-subtitle">
+                Enter your project description. Our intelligent semantic analyzer will automatically extract required
+                skills, roles, and importance weights.
+              </p>
+</div>
+<div style="display: flex; gap: 10px; align-items: center;">
+<label style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Load Preset:</label>
+<div style="display: flex; gap: 8px; align-items: center;">
+<button class="btn btn-secondary btn-sm" id="btn-create-blank-proj" title="Create a new custom project from scratch" type="button">
+<span>➕</span> New Blank Project
+                </button>
+<button class="btn btn-secondary btn-sm" id="btn-project-load-default-presets" title="Load or restore 4 academic capstone presets" type="button">
+<span>📦</span> Load 4 Academic Presets
+                </button>
+<select class="form-control" id="project-preset-selector" style="width: auto; min-width: 240px;">
+<!-- Filled dynamically -->
+</select>
+<button class="btn btn-danger btn-sm" id="btn-remove-current-project" type="button" title="Remove the selected project and free all students assigned to it" disabled>
+<span>🗑️</span> Remove Project
+</button>
+<span class="auto-save-indicator" id="proj-save-indicator" title="Changes auto-saved to Chrome storage">
+                  🟢 Auto-saved
+                </span>
+</div>
+</div>
+</div>
+<div class="project-analysis-layout compact-project-analysis-layout">
+<!-- Left: Input Form -->
+<div class="card project-input-card">
+<div class="card-header">
+<div class="card-title">
+<span>📝</span> Teacher Project Specification
+                </div>
+<span class="badge badge-neutral">Teacher Input</span>
+</div>
+<form id="project-analysis-form">
+<div class="form-group">
+<label class="form-label" for="proj-input-name">Project Name *</label>
+<input class="form-control" id="proj-input-name" placeholder="e.g. AI Healthcare Diagnostic System" required="" type="text"/>
+</div>
+<div class="project-meta-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; align-items: start;">
+<div class="form-group">
+<label class="form-label" for="proj-input-type">Project Domain / Type</label>
+<select class="form-control" id="proj-input-type">
+<option value="">Select project domain / type</option>
+<option value="AI/ML">AI / Machine Learning</option>
+<option value="Web">Web / Software</option>
+<option value="Data Science">Data Science / Analytics</option>
+<option value="IoT">IoT / Embedded</option>
+<option value="Cybersecurity">Cybersecurity</option>
+<option value="Mobile">Mobile Application</option>
+<option value="Healthcare">Healthcare / Medical</option>
+<option value="FinTech">FinTech / Finance</option>
+<option value="Education">Education / EdTech</option>
+<option value="Cloud">Cloud / DevOps</option>
+<option value="Research">Research / Academic</option>
+<option value="Other">Other / General Engineering</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label" for="proj-input-teamsize">Team Size</label>
+<input class="form-control" id="proj-input-teamsize" max="10" min="2" required="" type="number" value="5"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="proj-input-numteams">Number of Teams</label>
+<input class="form-control" id="proj-input-numteams" max="20" min="1" required="" type="number" value="4"/>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label" for="proj-input-desc">
+                    Project Description (Detailed technical scope &amp; deliverables) *
+                  </label>
+<textarea class="form-control" id="proj-input-desc" placeholder="e.g. Develop an end-to-end intelligent medical diagnostics suite that processes multi-modal medical images..." required="" rows="3"></textarea>
+</div>
+<div style="display: flex; gap: 12px; margin-top: 10px;">
+<button class="btn btn-primary" id="btn-trigger-analyze" style="flex: 1;" type="button">
+<span>⚡</span> Analyze Project &amp; Extract Skills
+                  </button>
+<button class="btn btn-secondary" id="btn-reset-proj-form" type="button">
+                    Reset
+                  </button>
+</div>
+</form>
+</div>
+<!-- Right: System Analysis Result & Interactive Requirements Editor -->
+<div class="card project-results-card">
+<div class="card-header">
+<div>
+<div class="card-title">
+<span>🧠</span> Intelligent System Extraction
+                  </div>
+<div class="card-subtitle">AI-inferred skills, roles, and importance ratings</div>
+</div>
+<button class="btn btn-secondary btn-sm" id="btn-add-custom-skill-req">
+<span>➕</span> Add Skill
+                </button>
+</div>
+<div id="project-analysis-empty-state" style="display: none; text-align: center; padding: 40px 20px;">
+<div style="font-size: 3rem; margin-bottom: 12px;">🔍</div>
+<h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">Awaiting Project Input</h4>
+<p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 320px; margin: 6px auto;">
+                  Click "Analyze Project" to run the intelligent requirement extractor.
+                </p>
+</div>
+<div id="project-analysis-results-container">
+<!-- Inferred Roles -->
+<div style="margin-bottom:20px;">
+<div style="font-size:.8rem;font-weight:700;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">Required Project Roles:</div>
+<div id="extracted-roles-list" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+</div>
+<!-- Inferred Skills Table -->
+<div style="margin-bottom:20px;">
+<div style="font-size:.8rem;font-weight:700;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">AI-Inferred Required Skills &amp; Target Levels:</div>
+<div class="table-responsive">
+<table class="academic-table" id="skills-extracted-table">
+<thead><tr><th>Skill</th><th>Domain</th><th>Importance</th><th>Target Level</th><th>Evidence</th><th>Actions</th></tr></thead>
+<tbody id="extracted-skills-tbody"></tbody>
+</table>
+</div>
+</div>
+<div style="background-color:var(--bg-subtle);border-radius:var(--radius-md);padding:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+<span style="font-size:.82rem;color:var(--text-secondary);">🤖 The system infers skills and roles from project context, then matches them against the students stored in the database.</span>
+<button class="btn btn-primary btn-sm" id="btn-project-to-optimizer"><span>⚙️</span> Continue to Team Optimization</button>
+</div>
+<!-- AI reasoning + live student matching -->
+<div class="card" id="project-ai-insights" style="margin-top:18px;padding:16px;background:linear-gradient(135deg,rgba(99,102,241,.06),rgba(14,165,233,.05));border:1px solid var(--border-color);">
+<div style="font-size:.82rem;font-weight:800;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">🧠 AI Project Understanding</div>
+<div id="project-ai-summary" style="font-size:.86rem;color:var(--text-secondary);line-height:1.55;margin-bottom:12px;">Analyze a project to generate skill, role, and student-fit reasoning.</div>
+<div id="project-student-matches"></div>
+</div>
+<!-- Deep project intelligence -->
+<div class="card" id="project-deep-analysis" style="margin-top:18px;padding:18px;background:var(--bg-surface);border:1px solid var(--border-color);">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;">
+    <div>
+      <div style="font-size:.82rem;font-weight:800;text-transform:uppercase;color:var(--text-secondary);">🔬 Deep Project Decomposition</div>
+      <div id="project-deep-domain" style="display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:5px 9px;border-radius:999px;background:var(--bg-subtle);border:1px solid var(--border-color);font-size:.74rem;font-weight:800;color:var(--primary);">📁 Project Domain: —</div>
+      <div style="font-size:.76rem;color:var(--text-muted);margin-top:5px;">Functional capabilities, implementation signals, deliverables and role responsibilities derived from the complete project description.</div>
+    </div>
+    <span id="project-complexity-badge" class="badge badge-primary">Analysis Depth: —</span>
+  </div>
+  <div id="project-deep-analysis-grid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;"></div>
+  <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border-color);">
+    <div style="font-size:.78rem;font-weight:800;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">👥 Role Responsibilities &amp; Core Skills</div>
+    <div id="project-role-details"></div>
+  </div>
+</div>
+</div>
+</div></div></section>
+<!-- 3. 👨‍🎓 STUDENT DASHBOARD -->
+<section class="view-panel" id="view-students" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>👨‍🎓</span> Student Group Dashboard
+              </h2>
+<p class="page-header-subtitle">
+                Manage registered students, multidimensional skill scores (1–10), preferred roles, and experience
+                levels. Unlimited student capacity.
+              </p>
+</div>
+<div class="card" style="margin:14px 0 18px;padding:12px 16px;border-left:4px solid var(--primary);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+  <div><div style="font-size:.74rem;font-weight:800;text-transform:uppercase;color:var(--text-muted);">🎓 Student Registration Cohort Code</div><div style="font-size:.92rem;color:var(--text-secondary);margin-top:3px;">Share this code with your students. They register themselves and automatically appear in this cohort.</div></div>
+  <div style="display:flex;align-items:center;gap:8px;"><code id="admin-cohort-code" style="font-size:1rem;font-weight:800;letter-spacing:.08em;padding:7px 10px;border-radius:6px;background:var(--bg-subtle);border:1px solid var(--border-color);">—</code><button class="btn btn-secondary btn-sm" id="btn-copy-cohort-code" type="button">📋 Copy</button></div>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+<button class="btn btn-secondary" id="btn-reset-students-default" title="Load standard 20 engineering student profiles">
+<span>📦</span> Load Sample Students
+              </button>
+<button class="btn btn-primary" id="btn-open-add-student-modal">
+<span>➕</span> Add New Student
+              </button>
+<button class="btn btn-secondary" id="btn-analyze-cohort-roles" title="Deeply analyze student skills and assign AI-recommended roles">
+<span>🧠</span> Analyze &amp; Assign Roles
+              </button>
+</div>
+</div>
+<!-- Student Assignment State KPI Metric Cards (Requirement 8 & 11) -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px;">
+<div class="card" style="padding: 16px 20px; border-left: 4px solid #3b82f6;">
+<div style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">
+                Total Registered Students
+              </div>
+<div id="kpi-students-total" style="font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin: 4px 0;">
+                0
+              </div>
+<div style="font-size: 0.78rem; color: var(--text-secondary);">
+                Active Academic Cohort
+              </div>
+</div>
+<div class="card" style="padding: 16px 20px; border-left: 4px solid #10b981;">
+<div style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">
+                Available / Unassigned
+              </div>
+<div id="kpi-students-available" style="font-size: 1.85rem; font-weight: 800; color: #10b981; margin: 4px 0;">
+                0
+              </div>
+<div style="font-size: 0.78rem; color: var(--text-secondary);">
+                Ready for Project Team Allocation
+              </div>
+</div>
+<div class="card" style="padding: 16px 20px; border-left: 4px solid #8b5cf6;">
+<div style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">
+                Already Assigned Students
+              </div>
+<div id="kpi-students-assigned" style="font-size: 1.85rem; font-weight: 800; color: #8b5cf6; margin: 4px 0;">
+                0
+              </div>
+<div style="font-size: 0.78rem; color: var(--text-secondary);">
+                Assigned to Active Project Teams
+              </div>
+</div>
+</div>
+<!-- Filter & Search Bar -->
+<div class="card" style="padding: 16px 20px; margin-bottom: 20px;">
+<div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+<div style="display: flex; gap: 12px; flex: 1; min-width: 280px;">
+<input class="form-control" id="student-search-input" placeholder="Search by student name, roll number, or skills..." style="padding: 8px 12px;" type="text"/>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+<select class="form-control" id="filter-assignment" style="width: auto; padding: 8px 12px; font-weight: 600;">
+<option value="all">All Student Statuses</option>
+<option value="Available">🟢 Available (Unassigned Pool)</option>
+<option value="Assigned">🔵 Assigned to Team</option>
+</select>
+<select class="form-control" id="filter-experience" style="width: auto; padding: 8px 12px;">
+<option value="all">All Experience Tiers</option>
+<option value="Advanced">Advanced</option>
+<option value="Intermediate">Intermediate</option>
+<option value="Beginner">Beginner</option>
+</select>
+<select class="form-control" id="filter-role" style="width: auto; padding: 8px 12px;">
+<option value="all">All Preferred Roles</option>
+<!-- Populated by JS -->
+</select>
+</div>
+</div>
+</div>
+<!-- Students Data Table -->
+<div class="card">
+<div class="card-header">
+<div class="card-title">
+<span>📋</span> Enrolled Students Roster (<span id="students-table-count">0</span> Profiles)
+              </div>
+</div>
+<div class="table-responsive">
+<table class="academic-table" id="students-roster-table">
+<thead>
+<tr>
+<th>Roll No</th>
+<th>Student Name</th>
+<th>Status</th>
+<th>Experience</th>
+<th>AI Recommended Role</th>
+<th>Key Skills (1–10)</th>
+<th>Interests</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="students-table-tbody">
+<!-- Populated by JS -->
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 4. ⚙️ TEAM OPTIMIZATION DASHBOARD --><!-- 5. ⚙️ TEAM OPTIMIZATION DASHBOARD -->
+<section class="view-panel" id="view-optimizer" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>⚙️</span> Team Formation Optimization Engine
+              </h2>
+<p class="page-header-subtitle">
+                Multi-objective optimization allocates available unassigned students into balanced project teams.
+              </p>
+</div>
+<div style="display: flex; gap: 10px; align-items: center;">
+<button class="btn btn-primary btn-lg btn-trigger-optimization" id="btn-run-optimization">
+<span>⚡</span> Generate Optimal Teams
+              </button>
+</div>
+</div>
+<!-- Student Pool Allocation Status Bar (Requirement 8, 9, 11) -->
+<div class="card" style="padding: 12px 18px; margin-bottom: 20px; background: var(--bg-subtle); border-left: 4px solid var(--primary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap; font-size: 0.86rem;">
+<div>
+<span style="color: var(--text-muted);">Active Project:</span>
+<strong id="optimizer-pool-project-name" style="color: var(--primary);">AI Healthcare Diagnostic System</strong>
+</div>
+<div>
+<span style="color: var(--text-muted);">Required Slots:</span>
+<strong id="optimizer-pool-required-slots">20 (4 Teams × 5)</strong>
+</div>
+<div>
+<span style="color: var(--text-muted);">Available Pool:</span>
+<span class="badge badge-success" id="optimizer-pool-available-badge" style="font-size: 0.82rem; font-weight: 700;">20 Available</span>
+</div>
+<div>
+<span style="color: var(--text-muted);">Already Assigned:</span>
+<span class="badge badge-neutral" id="optimizer-pool-assigned-badge" style="font-size: 0.82rem;">0 Assigned</span>
+</div>
+</div>
+<span id="optimizer-allocation-summary-tag" style="font-size: 0.78rem; color: var(--text-muted);">
+              Multiple project allocation enabled • Assigned students excluded
+            </span>
+</div>
+<!-- Insufficient Students Warning Alert Box (Requirement 10) -->
+<div class="card" id="optimizer-shortage-alert" style="display: none; padding: 18px 22px; margin-bottom: 20px; background: rgba(239, 68, 68, 0.08); border: 2px solid var(--danger); border-radius: var(--radius-md);">
+<div style="display: flex; align-items: flex-start; gap: 14px;">
+<div style="font-size: 2rem;">⚠️</div>
+<div style="flex: 1;">
+<h4 style="color: var(--danger); font-size: 1.05rem; font-weight: 800; margin-bottom: 4px;">
+                  Insufficient Students Available
+                </h4>
+<p id="optimizer-shortage-msg" style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin-bottom: 12px;">
+                  This project requires more unassigned students than are currently available. Please add more students or reduce the required team size.
+                </p>
+<div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px;">
+<div style="background: #fff; padding: 6px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(239, 68, 68, 0.3); font-size: 0.82rem;">
+<strong>Required:</strong> <span id="shortage-stat-required" style="font-weight: 800; color: var(--text-primary);">10</span>
+</div>
+<div style="background: #fff; padding: 6px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(239, 68, 68, 0.3); font-size: 0.82rem;">
+<strong>Available:</strong> <span id="shortage-stat-available" style="font-weight: 800; color: #10b981;">6</span>
+</div>
+<div style="background: #fff; padding: 6px 14px; border-radius: var(--radius-sm); border: 1px solid rgba(239, 68, 68, 0.3); font-size: 0.82rem;">
+<strong>Shortage:</strong> <span id="shortage-stat-deficit" style="font-weight: 800; color: var(--danger);">-4 Students</span>
+</div>
+</div>
+<div id="shortage-missing-skills-container" style="font-size: 0.8rem; color: var(--danger);">
+<!-- Populated dynamically with skills at risk -->
+</div>
+</div>
+</div>
+</div>
+<div class="optimizer-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+<!-- Left: Configuration Sliders -->
+<div class="card">
+<div class="card-header">
+<div class="card-title">
+<span>🎚️</span> Multi-Objective Balance Weights
+                </div>
+<button class="btn btn-secondary btn-sm" id="btn-reset-weights">Reset 100%</button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<div class="form-group">
+<div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+<label class="form-label" style="margin-bottom:0;">Skill Balance Importance</label>
+<span id="weight-skill-val" style="font-weight: 700; color: var(--primary);">50%</span>
+</div>
+<input class="form-control" id="slider-weight-skill" max="80" min="10" style="cursor: pointer;" type="range" value="50"/>
+<small style="color: var(--text-muted);">Ensures every team has strong coverage across all project
+                    technical requirements.</small>
+</div>
+<div class="form-group">
+<div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+<label class="form-label" style="margin-bottom:0;">Student Preference Match Importance</label>
+<span id="weight-pref-val" style="font-weight: 700; color: var(--primary);">30%</span>
+</div>
+<input class="form-control" id="slider-weight-pref" max="80" min="10" style="cursor: pointer;" type="range" value="30"/>
+<small style="color: var(--text-muted);">Matches students with their chosen preferred role and
+                    technical interests.</small>
+</div>
+<div class="form-group">
+<div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+<label class="form-label" style="margin-bottom:0;">Experience Balance Importance</label>
+<span id="weight-exp-val" style="font-weight: 700; color: var(--primary);">20%</span>
+</div>
+<input class="form-control" id="slider-weight-exp" max="60" min="5" style="cursor: pointer;" type="range" value="20"/>
+<small style="color: var(--text-muted);">Distributes Advanced students evenly to provide peer
+                    mentorship to Beginners.</small>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+<div>
+<label class="form-label">Team Size</label>
+<input class="form-control" id="opt-team-size" max="8" min="2" type="number" value="5"/>
+</div>
+<div>
+<label class="form-label">Number of Teams</label>
+<input class="form-control" id="opt-num-teams" max="10" min="1" type="number" value="4"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Unified Academic Optimization Orchestrator -->
+<div class="card">
+<div class="card-header">
+<div>
+<div class="card-title">
+<span>🧠</span> Academic Optimization Orchestrator
+                  </div>
+<div class="card-subtitle">CS-402 Analysis of Algorithms Unified Pipeline</div>
+</div>
+<span class="badge badge-primary">Hybrid AOA Engine</span>
+</div>
+<div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); margin-bottom: 16px; border: 1px solid var(--border-color);">
+<div style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">
+                  Unified Multi-Stage Formation Strategy
+                </div>
+<p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">
+                  SkillMatch AI combines <strong>Hungarian-inspired Priority Matching</strong> for bipartite seed role
+                  allocation with <strong>Multi-Objective Genetic Pareto Optimization</strong> to search non-convex
+                  solution spaces across Skill Balance, Student Role Preferences, Experience Distribution, and
+                  Student Diversity.
+                </p>
+<!-- 4-Step Visual Flow -->
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.8rem;">
+<div style="display: flex; align-items: center; gap: 8px;">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--primary-light); color: var(--primary); font-weight: 700; font-size: 0.72rem;">1</span>
+<span style="color: var(--text-secondary);">Synthesize project skill weights and required role
+                      constraints</span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px;">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--primary-light); color: var(--primary); font-weight: 700; font-size: 0.72rem;">2</span>
+<span style="color: var(--text-secondary);">Evaluate student competency vectors &amp; preferred role
+                      synergies</span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px;">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--primary-light); color: var(--primary); font-weight: 700; font-size: 0.72rem;">3</span>
+<span style="color: var(--text-secondary);">Seed assignment via Hungarian-inspired Priority
+                      bipartite matching</span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px;">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--primary-light); color: var(--primary); font-weight: 700; font-size: 0.72rem;">4</span>
+<span style="color: var(--text-secondary);">Pareto genetic recombination to maximize 40/25/20/15
+                      harmonic equilibrium</span>
+</div>
+</div>
+</div>
+<!-- Master Execution Button -->
+<button class="btn btn-primary btn-lg btn-trigger-optimization" id="btn-run-optimization-card" style="width: 100%; padding: 14px 20px; font-size: 1.05rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px;">
+<span>⚡</span> Generate Optimal Teams
+              </button>
+<!-- Real-time Progress Bar (during generation) -->
+<div id="opt-progress-container" style="display: none; margin-top: 20px;">
+<div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 6px;">
+<span id="opt-progress-status" style="font-weight: 600; color: var(--primary);">Ingesting requirements
+                    &amp; constraints...</span>
+<span id="opt-progress-percent" style="font-weight: 700;">0%</span>
+</div>
+<div style="height: 8px; background: var(--bg-subtle); border-radius: 999px; overflow: hidden; border: 1px solid var(--border-color);">
+<div id="opt-progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981); transition: width 0.15s ease;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. 🏆 TEAM RESULTS DASHBOARD -->
+<section class="view-panel" id="view-results" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>🏆</span> Generated Team Results &amp; Composition
+              </h2>
+<p class="page-header-subtitle">
+                Review balanced teams generated via <strong id="results-algo-used-label">Multi-Objective Genetic
+                  Optimization</strong>.
+              </p>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+<button class="btn btn-secondary" id="btn-results-to-explain">
+<span>💡</span> Explain Student Placements
+              </button>
+<button class="btn btn-primary" id="btn-results-to-report">
+<span>👥</span> Team Overview
+              </button>
+</div>
+</div>
+<!-- Overall Summary Metric Bar -->
+<div class="card" style="margin-bottom: 24px;">
+<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 16px; text-align: center;">
+<div>
+<div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">
+                  Teams Formed</div>
+<div id="results-summary-numteams" style="font-size: 1.8rem; font-weight: 800; color: var(--text-primary);">4 Teams</div>
+</div>
+<div style="width: 1px; height: 40px; background: var(--border-color);"></div>
+<div>
+<div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">
+                  Students Placed</div>
+<div id="results-summary-students" style="font-size: 1.8rem; font-weight: 800; color: var(--text-primary);">20 / 20</div>
+</div>
+<div style="width: 1px; height: 40px; background: var(--border-color);"></div>
+<div>
+<div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">
+                  Execution Time</div>
+<div id="results-summary-time" style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">14.8
+                  ms</div>
+</div>
+<div style="width: 1px; height: 40px; background: var(--border-color);"></div>
+<div>
+<div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">
+                  Class Average Score</div>
+<div id="results-summary-mean-score" style="font-size: 1.8rem; font-weight: 800; color: var(--success);">92.5%</div>
+</div>
+</div>
+</div>
+<!-- Recommended Team Banner Container -->
+<div id="results-recommended-banner"></div>
+<!-- Tie Breaker Notice Container -->
+<div id="results-tie-notice"></div>
+<!-- Cross-Team Multi-Objective Harmony Matrix -->
+<div class="card" id="results-comparison-card" style="margin-bottom: 24px;">
+<div class="card-header">
+<div>
+<div class="card-title">
+<span>📊</span> Cross-Team Multi-Objective Harmony Matrix
+                </div>
+<div class="card-subtitle">Direct comparison across all 4 weighted objectives (Best values highlighted)
+                </div>
+</div>
+<span class="badge badge-primary">Pareto Matrix</span>
+</div>
+<div class="table-responsive">
+<table class="academic-table comparison-matrix-table" id="team-comparison-matrix-table">
+<thead>
+<tr>
+<th>Team Designation</th>
+<th>Skill Balance (50%)</th>
+<th>Preference Match (30%)</th>
+<th>Experience Balance (20%)</th>
+<th>Overall Harmony</th>
+<th>Rank / Rationale</th>
+</tr>
+</thead>
+<tbody id="team-comparison-tbody">
+<!-- Populated dynamically -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- Dynamic Team Cards Grid -->
+<div id="team-results-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 24px;">
+<!-- Rendered by JS -->
+</div>
+</section>
+<!-- 7. 💡 EXPLAIN & WHAT-IF DASHBOARD -->
+<section class="view-panel" id="view-explain" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>💡</span> Decision Explainability &amp; What-If Simulator
+              </h2>
+<p class="page-header-subtitle">
+                Understand algorithmic rationale for student placement, or simulate hypothetical swaps to observe
+                balance impact.
+              </p>
+</div>
+</div>
+<div class="explain-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+<!-- A. Explain Section -->
+<div class="card">
+<div class="card-header">
+<div>
+<div class="card-title">
+<span>🔍</span> Section A: Decision Explainability
+                  </div>
+<div class="card-subtitle">Why was this student assigned here?</div>
+</div>
+<span class="badge badge-primary">Explainable AI</span>
+</div>
+<div class="form-group">
+<label class="form-label" for="explain-student-select">Select Student to Inspect:</label>
+<select class="form-control" id="explain-student-select">
+<!-- Filled dynamically -->
+</select>
+</div>
+<div id="explain-details-card" style="background: var(--bg-subtle); border-radius: var(--radius-md); padding: 20px; border: 1px solid var(--border-color);">
+<!-- Populated dynamically by JS -->
+</div>
+</div>
+<!-- B. What-If Simulator -->
+<div class="card">
+<div class="card-header">
+<div>
+<div class="card-title">
+<span>🔄</span> Section B: What-If Swap Simulator
+                  </div>
+<div class="card-subtitle">Test moving a student from Team A → Team B</div>
+</div>
+<span class="badge badge-warning">Interactive</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+<div class="form-group" style="margin-bottom: 0;">
+<label class="form-label">Student to Move</label>
+<select class="form-control" id="whatif-student-select">
+<!-- Populated dynamically -->
+</select>
+</div>
+<div class="form-group" style="margin-bottom: 0;">
+<label class="form-label">Target Destination Team</label>
+<select class="form-control" id="whatif-target-team-select">
+<!-- Populated dynamically -->
+</select>
+</div>
+</div>
+<div style="margin-bottom: 16px;">
+<label class="form-label">Swap With Member in Destination Team (Optional)</label>
+<select class="form-control" id="whatif-swap-partner-select">
+<option value="">-- Direct Move (No swap partner) --</option>
+<!-- Populated dynamically -->
+</select>
+</div>
+<button class="btn btn-primary" id="btn-run-whatif" style="width: 100%; margin-bottom: 20px;">
+<span>🔬</span> Calculate What-If Impact
+              </button>
+<div id="whatif-results-box" style="display: none; background: var(--bg-subtle); border-radius: var(--radius-md); padding: 20px; border: 1px solid var(--border-color);">
+<!-- Populated dynamically -->
+</div>
+</div>
+</div>
+</section>
+<!-- 8. ⚙️ ACTIVE ALGORITHM ARCHITECTURE & AOA BENCHMARKS DASHBOARD -->
+<section class="view-panel" id="view-algo" style="display: none;">
+<div class="page-header">
+<div>
+<h2 class="page-header-title">
+<span>⚙️</span> Active Project Algorithms Architecture &amp; AOA Benchmarks
+              </h2>
+<p class="page-header-subtitle">
+                Official algorithmic specification and live empirical evaluation of the 4 core algorithms actively
+                powering SkillMatch AI.
+              </p>
+</div>
+</div>
+<!-- Project Algorithmic Pipeline Flow Banner -->
+<div class="card" style="margin-bottom: 24px; background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%); border: 1.5px solid var(--border-color);">
+<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+<h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">
+                🔄 SkillMatch AI End-to-End Algorithmic Pipeline
+              </h4>
+<span class="badge badge-primary">CS-402 Architecture</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-size: 0.82rem;">
+<div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border-left: 3px solid #3b82f6;">
+<strong>1. Project Requirement Analysis</strong><br/>
+<span style="color: var(--text-muted); font-size: 0.76rem;">Vectorized Threshold Projection</span>
+</div>
+<div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border-left: 3px solid #f59e0b;">
+<strong>2. Greedy Heuristic Seed</strong><br/>
+<span style="color: var(--text-muted); font-size: 0.76rem;">Priority Role &amp; Bottleneck Allocator</span>
+</div>
+<div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border-left: 3px solid #10b981;">
+<strong>3. Multi-Objective Genetic Optimizer</strong><br/>
+<span style="color: var(--text-muted); font-size: 0.76rem;">Pareto Frontier + 2-Opt Local Search</span>
+</div>
+<div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border-left: 3px solid #8b5cf6;">
+<strong>4. Bipartite Role Matcher</strong><br/>
+<span style="color: var(--text-muted); font-size: 0.76rem;">Kuhn-Munkres Optimal Assignment</span>
+</div>
+</div>
+</div>
+<!-- Visual Algorithm Learning Flow -->
+<div class="card" id="algorithm-visual-flow" style="margin-bottom: 28px; background: linear-gradient(135deg, var(--bg-surface), var(--bg-subtle));">
+<div class="card-header">
+<div>
+<div class="card-title"><span>🧩</span> How the Algorithms Work — Visual Guide</div>
+<div class="card-subtitle">Simple step-by-step explanation of the algorithms used by SkillMatch AI</div>
+</div>
+<span class="badge badge-primary">CS-402 AOA</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:stretch;">
+<div style="padding:14px;border:1px solid var(--border-color);border-radius:12px;background:var(--bg-surface);">
+<div style="font-size:1.4rem;margin-bottom:6px;">📋</div>
+<strong>1. Project Requirement Analysis</strong>
+<p style="font-size:.78rem;color:var(--text-secondary);margin:7px 0;">Compare every required project skill with every student's proficiency.</p>
+<div style="font-size:.75rem;font-weight:700;color:var(--primary);">O(S × R)</div>
+<div style="font-size:.7rem;color:var(--text-muted);">S = students, R = required skills</div>
+</div>
+<div style="padding:14px;border:1px solid var(--border-color);border-radius:12px;background:var(--bg-surface);">
+<div style="font-size:1.4rem;margin-bottom:6px;">🎯</div>
+<strong>2. Greedy Allocation</strong>
+<p style="font-size:.78rem;color:var(--text-secondary);margin:7px 0;">Pick the strongest available candidate for each important role/skill, then continue until all slots are filled.</p>
+<div style="font-size:.75rem;font-weight:700;color:var(--primary);">O(N × K log N)</div>
+<div style="font-size:.7rem;color:var(--text-muted);">Fast baseline solution</div>
+</div>
+<div style="padding:14px;border:1px solid var(--border-color);border-radius:12px;background:var(--bg-surface);">
+<div style="font-size:1.4rem;margin-bottom:6px;">🔗</div>
+<strong>3. Hungarian Matching</strong>
+<p style="font-size:.78rem;color:var(--text-secondary);margin:7px 0;">Build a student-to-role score matrix and find the best one-to-one assignment.</p>
+<div style="font-size:.75rem;font-weight:700;color:var(--primary);">O(N³)</div>
+<div style="font-size:.7rem;color:var(--text-muted);">Bipartite assignment</div>
+</div>
+<div style="padding:14px;border:1px solid var(--border-color);border-radius:12px;background:var(--bg-surface);">
+<div style="font-size:1.4rem;margin-bottom:6px;">🔄</div>
+<strong>4. Multi-Objective Optimization</strong>
+<p style="font-size:.78rem;color:var(--text-secondary);margin:7px 0;">Refine the initial teams using skill balance, role preference and experience balance until a high-quality solution is found.</p>
+<div style="font-size:.75rem;font-weight:700;color:var(--primary);">O(G × P × N)</div>
+<div style="font-size:.7rem;color:var(--text-muted);">G = generations, P = population/solutions</div>
+</div>
+</div>
+<div style="margin-top:14px;padding:12px 14px;border:1px dashed var(--border-color);border-radius:10px;text-align:center;font-size:.82rem;color:var(--text-secondary);">
+<strong>Input</strong> Student Skills + Project Requirements
+              <span style="margin:0 12px;color:var(--primary);">→</span>
+<strong>Analyze</strong> Project Requirements
+              <span style="margin:0 12px;color:var(--primary);">→</span>
+<strong>Match</strong> Students to Roles
+              <span style="margin:0 12px;color:var(--primary);">→</span>
+<strong>Optimize</strong> Teams
+              <span style="margin:0 12px;color:var(--primary);">→</span>
+<strong>Output</strong> Explainable Teams
+            </div>
+</div>
+<!-- Deep-Dive Cards for the 4 Project Algorithms -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-bottom: 28px;">
+<!-- Algo 1 -->
+<div class="card" style="border-top: 4px solid #10b981;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+<h4 style="margin: 0; font-size: 1rem; font-weight: 800; color: var(--text-primary);">
+                  1. Multi-Objective Genetic Optimizer + 2-Opt
+                </h4>
+<span class="badge badge-success" style="font-size: 0.72rem;">Primary Engine</span>
+</div>
+<div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">
+                Module: <code>js/models/teamOptimizer.js</code>
+</div>
+<p style="font-size: 0.83rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">
+                Iteratively refines student team permutations across <strong>Skill Balance</strong>, <strong>Role
+                  Preferences</strong>, and <strong>Peer Experience</strong>. Employs permutation chromosomes,
+                tournament selection, and 2-opt pairwise hill-climbing swaps to escape local extrema.
+              </p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.78rem; background: var(--bg-subtle); padding: 8px 12px; border-radius: 4px;">
+<div><strong>Time:</strong> <code>O(G·P·N log N)</code></div>
+<div><strong>Space:</strong> <code>O(P·N)</code></div>
+</div>
+</div>
+<!-- Algo 2 -->
+<div class="card" style="border-top: 4px solid #f59e0b;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+<h4 style="margin: 0; font-size: 1rem; font-weight: 800; color: var(--text-primary);">
+                  2. Greedy Priority-Queue Allocator
+                </h4>
+<span class="badge badge-warning" style="font-size: 0.72rem;">Seed &amp; Baseline</span>
+</div>
+<div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">
+                Module: <code>js/models/teamOptimizer.js</code>
+</div>
+<p style="font-size: 0.83rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">
+                Computes composite student-role fit scores and allocates top candidates greedily to bottleneck technical
+                roles (e.g. AI Lead, Backend Architect), generating initial feasible seeds in sub-2ms time.
+              </p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.78rem; background: var(--bg-subtle); padding: 8px 12px; border-radius: 4px;">
+<div><strong>Time:</strong> <code>O(N·K log N)</code></div>
+<div><strong>Space:</strong> <code>O(N)</code></div>
+</div>
+</div>
+<!-- Algo 3 -->
+<div class="card" style="border-top: 4px solid #8b5cf6;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+<h4 style="margin: 0; font-size: 1rem; font-weight: 800; color: var(--text-primary);">
+                  3. Bipartite Kuhn-Munkres Role Matcher
+                </h4>
+<span class="badge badge-neutral" style="font-size: 0.72rem;">Role Assignment</span>
+</div>
+<div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">
+                Module: <code>js/models/teamOptimizer.js</code>
+</div>
+<p style="font-size: 0.83rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">
+                Solves optimal one-to-one assignment of students to specific defined roles within teams on an
+                affinity-cost matrix, guaranteeing maximal role preference satisfaction via alternating augmenting
+                paths.
+              </p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.78rem; background: var(--bg-subtle); padding: 8px 12px; border-radius: 4px;">
+<div><strong>Time:</strong> <code>O(N³)</code></div>
+<div><strong>Space:</strong> <code>O(N·M)</code></div>
+</div>
+</div>
+</div>
+<!-- AOA Comparative Metrics Table -->
+<div class="card" style="margin-bottom: 28px;">
+<div class="card-header">
+<div class="card-title">
+<span>📊</span> Live Project Benchmarks (Active Session Execution)
+              </div>
+<span class="badge badge-primary">Active Algorithms</span>
+</div>
+<div class="table-responsive">
+<table class="academic-table" id="aoa-comparison-table">
+<thead>
+<tr>
+<th>Algorithm Used in Project</th>
+<th>Role in Pipeline</th>
+<th>Team Quality Score</th>
+<th>Execution Time</th>
+<th>Time Complexity</th>
+<th>Space Complexity</th>
+<th>Quality Variance</th>
+</tr>
+</thead>
+<tbody id="aoa-comparison-tbody">
+<!-- Populated by JS -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- Two Charts Row: Quality vs Time -->
+<div class="aoa-charts-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px;">
+<div class="card">
+<div class="card-header">
+<div class="card-title">
+<span>🎯</span> Algorithm vs Team Quality (%)
+                </div>
+<span class="badge badge-success">Higher is Better</span>
+</div>
+<div id="chart-algo-quality" style="padding: 10px 0;">
+<!-- SVG Chart -->
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-title">
+<span>⏱️</span> Algorithm vs Execution Time (ms)
+                </div>
+<span class="badge badge-warning">Lower is Faster</span>
+</div>
+<div id="chart-algo-time" style="padding: 10px 0;">
+<!-- SVG Chart -->
+</div>
+</div>
+</div>
+<!-- Scalability Benchmark Chart Card -->
+<div class="card" style="margin-bottom: 28px;">
+<div class="card-header">
+<div class="card-title">
+<span>📈</span> Empirical Scalability Analysis (N = 10 to 100 Students)
+              </div>
+<span class="badge badge-info">Complexity Benchmark</span>
+</div>
+<div id="chart-scalability" style="padding: 10px 0;">
+<!-- SVG Scalability Chart -->
+</div>
+</div>
+</section>
+<section class="view-panel" id="view-reports" style="display: none;">
+  <div class="page-header no-print">
+    <div>
+      <h2 class="page-header-title">
+        <span>👥</span> Academic Team Formation Overview
+      </h2>
+      <p class="page-header-subtitle">
+        Current project overview showing the teams formed, allocated students, roles, and team performance.
+      </p>
+    </div>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button class="btn btn-primary" id="btn-save-team-overview-pdf" type="button">
+        <span>📄</span> Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <div class="card" id="academic-team-overview" style="padding: 28px;">
+    <!-- Current Project Summary -->
+    <div class="report-header-simple" style="border-bottom: 1.5px solid var(--border-color); padding-bottom: 18px; margin-bottom: 22px;">
+      <div style="display:flex; justify-content:space-between; gap:20px; align-items:flex-start; flex-wrap:wrap;">
+        <div>
+          <div style="font-size:0.76rem; color:var(--text-muted); font-weight:800; text-transform:uppercase; letter-spacing:.05em;">Current Academic Project</div>
+          <h3 id="overview-project-title" style="margin:5px 0 5px; font-size:1.35rem; color:var(--text-primary);">No project selected</h3>
+          <div id="overview-project-domain" style="font-size:.84rem; color:var(--text-secondary);">—</div>
+        </div>
+        <div style="text-align:right; min-width:180px;">
+          <div id="overview-team-summary" class="badge badge-primary" style="font-size:.8rem;">0 Teams Formed</div>
+          <div id="overview-harmony" style="margin-top:7px; font-size:.8rem; color:var(--text-muted); font-weight:700;">Team Harmony: —</div>
+        </div>
+      </div>
+      <p id="overview-project-description" style="font-size:.88rem; line-height:1.55; color:var(--text-secondary); margin:12px 0 0;">No project description available.</p>
+    </div>
+
+    <!-- Created projects and their persistent team records -->
+    <div style="margin-bottom:22px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:10px; flex-wrap:wrap;">
+        <h3 style="font-size:1.05rem; margin:0; color:var(--text-primary);">Created Projects</h3>
+        <span style="font-size:.76rem; color:var(--text-muted);">Select a project to view its teams and members</span>
+      </div>
+      <div id="overview-project-list" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px;"></div>
+    </div>
+
+    <!-- Team Overview -->
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; flex-wrap:wrap;">
+        <h3 style="font-size:1.05rem; margin:0; color:var(--text-primary);">Teams Formed — Current Project</h3>
+        <span style="font-size:.76rem; color:var(--text-muted);">Live overview of the currently generated teams</span>
+      </div>
+      <div class="table-responsive">
+        <table class="academic-table" id="overview-teams-table" style="font-size:.84rem;">
+          <thead>
+            <tr>
+              <th style="width:13%;">Team</th>
+              <th style="width:47%;">Allocated Student Members (Roll, Name, Role)</th>
+              <th style="width:10%; text-align:center;">Skill Bal.</th>
+              <th style="width:10%; text-align:center;">Role Match</th>
+              <th style="width:10%; text-align:center;">Exp. Bal.</th>
+              <th style="width:10%; text-align:center;">Overall</th>
+            </tr>
+          </thead>
+          <tbody id="overview-teams-tbody">
+            <tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:28px;">No teams formed yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Institutional Details: names and date only; no signatures -->
+    <div id="overview-institutional-details" style="margin-top:28px; padding-top:18px; border-top:1.5px solid var(--border-color);">
+      <h3 style="font-size:1.05rem; margin:0 0 14px; color:var(--text-primary);">Institutional Details</h3>
+      <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px;">
+        <div style="padding:14px 16px; background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-md);">
+          <div style="font-size:.74rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;">Admin / Coordinator</div>
+          <div id="overview-admin-name" style="margin-top:5px; font-weight:800; color:var(--text-primary);">—</div>
+        </div>
+        <div style="padding:14px 16px; background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-md);">
+          <div style="font-size:.74rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;">Head of Department (HOD)</div>
+          <div id="overview-hod-name" style="margin-top:5px; font-weight:800; color:var(--text-primary);">—</div>
+        </div>
+        <div style="padding:14px 16px; background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-md);">
+          <div style="font-size:.74rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;">Dean</div>
+          <div id="overview-dean-name" style="margin-top:5px; font-weight:800; color:var(--text-primary);">—</div>
+        </div>
+      </div>
+      <div style="margin-top:12px; padding:10px 14px; background:var(--bg-subtle); border-left:3px solid var(--primary); border-radius:0 var(--radius-sm) var(--radius-sm) 0; font-size:.82rem; font-weight:700; color:var(--text-primary);">
+        Date: <strong id="overview-report-date" style="color:var(--primary);">—</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+</div>
+<!-- TEACHER / PROJECT ADMIN PROFILE MODAL -->
+<div class="modal-overlay" id="modal-teacher-profile">
+<div class="modal-content">
+<div class="modal-header">
+<div class="modal-title">
+<span>👨‍🏫</span> Teacher / Project Admin Profile
+        </div>
+<button class="close-btn" id="close-teacher-modal">×</button>
+</div>
+<form id="teacher-profile-form">
+<div class="modal-body">
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 18px;">
+            Update your academic coordinator credentials. These details are dynamically embedded into project reports,
+            evaluation seals, and PDF exports.
+          </p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div class="form-group">
+<label class="form-label" for="teacher-input-name">Full Name *</label>
+<input class="form-control" id="teacher-input-name" required="" type="text" value="Prof. Rajesh Sharma"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="teacher-input-desig">Designation *</label>
+<input class="form-control" id="teacher-input-desig" required="" type="text" value="Associate Professor &amp; Head of Project Committee"/>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div class="form-group">
+<label class="form-label" for="teacher-input-college">College / University Name *</label>
+<input class="form-control" id="teacher-input-college" required="" type="text" value="National Institute of Technology &amp; Engineering Sciences"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="teacher-input-dept">Department *</label>
+<input class="form-control" id="teacher-input-dept" required="" type="text" value="Computer Science &amp; Engineering"/>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div class="form-group">
+<label class="form-label" for="teacher-input-branch">Branch / Specialization *</label>
+<input class="form-control" id="teacher-input-branch" required="" type="text" value="CSE-AI &amp; Systems"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="teacher-input-empid">Employee / Faculty ID</label>
+<input class="form-control" id="teacher-input-empid" type="text" value="FAC-CS-8042"/>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div class="form-group">
+<label class="form-label" for="teacher-input-hod">Head of Department (HOD) *</label>
+<input class="form-control" id="teacher-input-hod" required="" type="text" value="Dr. Suresh Raman"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="teacher-input-dean">Dean of Academic Affairs *</label>
+<input class="form-control" id="teacher-input-dean" required="" type="text" value="Prof. Meenakshi Sundaram"/>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div class="form-group">
+<label class="form-label" for="teacher-input-email">Institutional Email *</label>
+<input class="form-control" id="teacher-input-email" required="" type="email" value="rajesh.sharma@itas.edu.in"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="teacher-input-password">Change Password (Leave blank to keep)</label>
+<input class="form-control" id="teacher-input-password" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div class="form-group">
+<label class="form-label" for="teacher-input-research">Research Domain / Specialization</label>
+<input class="form-control" id="teacher-input-research" type="text" value="Algorithm Design, Multi-Objective Optimization, Distributed Systems"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="teacher-input-office">Office / Cabin No.</label>
+<input class="form-control" id="teacher-input-office" type="text" value="Room 408, Dept. of CSE, Block B"/>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" id="btn-cancel-teacher-modal" type="button">Cancel</button>
+<button class="btn btn-primary" type="submit">Save Profile</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ADD / EDIT STUDENT MODAL -->
+<div class="modal-overlay" id="modal-student">
+<div class="modal-content">
+<div class="modal-header">
+<div class="modal-title" id="student-modal-title">
+<span>➕</span> Add New Student Profile
+        </div>
+<button class="close-btn" id="close-student-modal">×</button>
+</div>
+<form id="student-form">
+<input id="student-form-id" type="hidden" value=""/>
+<div class="modal-body" style="max-height: 75vh; overflow-y: auto;">
+  <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px;">
+    <div class="form-group">
+      <label class="form-label" for="student-input-name">Student Full Name *</label>
+      <input class="form-control" id="student-input-name" placeholder="e.g. Rahul Sharma" required type="text"/>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="student-input-roll">Roll / Registration No. *</label>
+      <input class="form-control" id="student-input-roll" placeholder="e.g. 24EJCCA001" required type="text"/>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+    <div class="form-group">
+      <label class="form-label" for="student-input-exp">Experience</label>
+      <select class="form-control" id="student-input-exp">
+        <option value="Advanced">Advanced</option>
+        <option selected value="Intermediate">Intermediate</option>
+        <option value="Beginner">Beginner</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="student-input-role">Preferred Role</label>
+      <select class="form-control" id="student-input-role"></select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="student-input-interests">Interests</label>
+    <input class="form-control" id="student-input-interests" placeholder="e.g. AI/ML, Web Development, Cloud" type="text"/>
+  </div>
+
+  <div class="card" style="margin-top: 8px; background: var(--bg-subtle); border: 1.5px solid var(--primary); padding: 14px 18px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:10px;">
+      <div>
+        <div style="font-weight:800; color:var(--primary); font-size:.92rem;">🧑‍🎓 Student Skills &amp; Proficiency</div>
+        <div style="font-size:.78rem; color:var(--text-muted); margin-top:3px;">Enter the skills provided by the student manually. Select a proficiency level from 1–10. No automatic skill extraction is used.</div>
+      </div>
+      <button class="btn btn-secondary btn-sm" id="btn-add-student-skill-row" type="button"><span>➕</span> Add Skill</button>
+    </div>
+    <div id="student-manual-skills-container" style="display:flex; flex-direction:column; gap:8px;"></div>
+    <div id="student-manual-skills-empty" style="font-size:.78rem; color:var(--text-muted); padding:8px 0;">No skills added yet. Add each student skill and its level.</div>
+  </div>
+
+  <div style="font-size:.76rem; color:var(--text-muted); margin-top:12px; padding:10px 12px; background:var(--bg-subtle); border-radius:8px;">
+    <strong>System analysis:</strong> After the student's skills and levels are saved, SkillMatch AI analyzes the skill matrix against the project requirements during Project Analysis and Team Optimization.
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-secondary" id="btn-cancel-student-modal" type="button">Cancel</button>
+  <button class="btn btn-primary" id="btn-save-student" type="submit">Save Student Profile</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ADMIN MANAGE STUDENT SKILLS MODAL -->
+<div class="modal-overlay" id="modal-admin-student-skills">
+<div class="modal-content" style="max-width: 680px;">
+<div class="modal-header">
+<div class="modal-title">
+<span>🛠️</span> Manage Student Skills
+</div>
+<button class="close-btn" id="close-admin-student-skills-modal" type="button">×</button>
+</div>
+<div class="modal-body">
+<div style="background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 12px 14px; margin-bottom: 16px;">
+<div style="font-weight: 800; color: var(--text-primary);" id="admin-skills-student-name">Student</div>
+<div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 3px;" id="admin-skills-student-meta">
+Registered student account • Skills are shared with the student's My Skills Portfolio.
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 12px;">
+<div class="form-group">
+<label class="form-label" for="admin-student-skill-name">Skill</label>
+<input class="form-control" id="admin-student-skill-name" list="admin-student-skill-options"
+placeholder="e.g. Python, AI/ML, Database" type="text"/>
+<datalist id="admin-student-skill-options"></datalist>
+</div>
+<div class="form-group">
+<label class="form-label" for="admin-student-skill-proficiency">Proficiency (1–10)</label>
+<input class="form-control" id="admin-student-skill-proficiency" max="10" min="1" step="1" type="number" value="7"/>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label" for="admin-student-skill-evidence">Evidence / Notes</label>
+<input class="form-control" id="admin-student-skill-evidence" placeholder="Optional: course, project, certification, etc." type="text"/>
+</div>
+<div style="display:flex; justify-content:space-between; align-items:center; margin: 18px 0 10px;">
+<div style="font-weight: 800;">Current Skill Profile</div>
+<span class="badge badge-neutral" id="admin-student-skill-count">0 skills</span>
+</div>
+<div id="admin-student-skills-list" style="display:flex; flex-direction:column; gap:8px;">
+<div style="text-align:center; padding:18px; color:var(--text-muted);">No skills recorded yet.</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" id="btn-cancel-admin-student-skills" type="button">Close</button>
+<button class="btn btn-primary" id="btn-save-admin-student-skill" type="button">
+<span>💾</span> Save Skill
+</button>
+</div>
+</div>
+</div>
+<!-- ADD PROJECT SKILL REQUIREMENT MODAL -->
+<div class="modal-overlay" id="modal-add-skill">
+<div class="modal-content" style="max-width: 580px;">
+<div class="modal-header">
+<div class="modal-title">
+<span>➕</span> Add Project Skill Requirement
+        </div>
+<button class="close-btn" id="close-add-skill-modal">×</button>
+</div>
+<div class="modal-body">
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;">
+          Choose a technical competency from the master curriculum library or enter a custom requirement.
+        </p>
+<div class="form-group">
+<label class="form-label" for="skill-search-input">Search Master Skill Library:</label>
+<input class="form-control" id="skill-search-input" placeholder="Search Python, AI/ML, Cloud, Security, DevOps..." type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Available Master Skills (Click to Select):</label>
+<div class="skill-library-grid" id="skill-library-chips">
+<!-- Populated dynamically from MASTER_SKILL_LIBRARY -->
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="skill-modal-name">Selected / Custom Skill Name *</label>
+<input class="form-control" id="skill-modal-name" placeholder="e.g. Natural Language Processing" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="skill-modal-importance">Importance</label>
+<select class="form-control" id="skill-modal-importance">
+<option value="Very High">Very High (90%)</option>
+<option selected="" value="High">High (75%)</option>
+<option value="Medium">Medium (60%)</option>
+<option value="Beginner / Foundational">Beginner / Foundational (40%)</option>
+<option value="Low">Low (30%)</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+<label class="form-label" style="margin-bottom: 0;">Target Capability Threshold</label>
+<span id="skill-modal-target-val" style="font-weight: 700; color: var(--primary);">75%</span>
+</div>
+<input class="form-control" id="skill-modal-target" max="100" min="20" style="cursor: pointer; padding: 0;" type="range" value="75"/>
+<small style="color: var(--text-muted); font-size: 0.78rem;">Target student proficiency standard expected for
+            this capstone project.</small>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" id="btn-cancel-add-skill" type="button">Cancel</button>
+<button class="btn btn-primary" id="btn-modal-submit-skill" type="button">Add to Requirements</button>
+</div>
+</div>
+</div>
+<!-- Storage & Workspace Data Management Modal -->
+<div class="modal-overlay" id="modal-storage-mgmt">
+<div class="modal-card" style="max-width: 620px;">
+<div class="modal-header">
+<h3 class="modal-title"><span>💾</span> Chrome Storage &amp; Workspace Backup</h3>
+<button class="modal-close-btn" id="close-storage-modal" type="button">×</button>
+</div>
+<div class="modal-body">
+<div style="background: var(--bg-subtle); padding: 14px 18px; border-radius: var(--radius-md); border-left: 4px solid var(--success); margin-bottom: 18px;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<strong style="color: var(--text-primary); font-size: 0.95rem;">Persistent Chrome Storage Status</strong>
+<span class="badge badge-success" id="storage-modal-engine">Active &amp; Persisted</span>
+</div>
+<p style="font-size: 0.83rem; color: var(--text-secondary); margin-top: 4px; line-height: 1.5;">
+            All your student records, custom skills, team configurations, and algorithmic benchmark results are
+            synchronized directly to your local browser storage (LocalStorage + IndexedDB). Your data remains 100%
+            intact even if you completely close or restart Google Chrome.
+          </p>
+</div>
+<!-- Live Storage Metrics -->
+<div class="storage-stats-grid">
+<div class="storage-stat-box">
+<div class="storage-stat-num" id="stat-students-saved">20</div>
+<div class="storage-stat-label">Students Stored</div>
+</div>
+<div class="storage-stat-box">
+<div class="storage-stat-num" id="stat-projects-saved">5</div>
+<div class="storage-stat-label">Projects Stored</div>
+</div>
+<div class="storage-stat-box">
+<div class="storage-stat-num" id="stat-teams-saved">4</div>
+<div class="storage-stat-label">Teams Formed</div>
+</div>
+<div class="storage-stat-box">
+<div class="storage-stat-num" id="stat-size-saved">24 KB</div>
+<div class="storage-stat-label">Storage Footprint</div>
+</div>
+</div>
+<!-- Export Backup -->
+<div style="margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+<h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 6px;">📤 Export Complete Workspace Backup</h4>
+<p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px;">
+            Download a portable <code>.json</code> backup containing all registered student profiles, project
+            requirements, optimizer parameters, and formed teams.
+          </p>
+<button class="btn btn-primary" id="btn-modal-export-backup" style="width: 100%;" type="button">
+<span>💾</span> Download Full Workspace Backup (JSON)
+          </button>
+</div>
+<!-- Import Backup -->
+<div style="margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+<h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 6px;">📥 Restore Workspace from Backup</h4>
+<p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px;">
+            Upload an existing SkillMatch backup file to restore your entire academic environment instantly.
+          </p>
+<input accept=".json" id="input-backup-file" style="display: none;" type="file"/>
+<div class="backup-dropzone" id="dropzone-backup-file">
+<div style="font-size: 1.8rem; margin-bottom: 4px;">📂</div>
+<div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary);">Click or drag backup .json
+              file here</div>
+<div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Supports SkillMatch AI JSON
+              backup exports</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" id="btn-close-storage-modal" type="button">Close</button>
+</div>
+</div>
+</div>
+<!-- Student Roster Import Modal -->
+<div class="modal-overlay" id="modal-demo-choice" style="z-index: 10000;">
+<div class="modal-content" style="max-width: 520px; text-align: center; padding: 32px 28px; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+<div style="font-size: 3.2rem; margin-bottom: 12px;">📦</div>
+<h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">
+        Welcome to SkillMatch AI!
+      </h3>
+<p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+        Would you like to load demo projects and student data?
+      </p>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<button class="btn btn-primary" id="btn-choice-load-demo" style="height: 46px; font-weight: 700; font-size: 0.92rem; justify-content: center;" type="button">
+<span>✨</span> Yes, Load Demo Data
+        </button>
+<button class="btn btn-secondary" id="btn-choice-empty-workspace" style="height: 44px; font-weight: 600; font-size: 0.92rem; justify-content: center;" type="button">
+<span>🚀</span> No, Start With My Own Data
+        </button>
+</div>
+<p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 18px; margin-bottom: 0;">
+        Demo data will remain strictly isolated to your account and can be cleared or customized anytime.
+      </p>
+</div>
+</div>
+<!-- MODAL: ADD / EDIT STUDENT SKILL -->
+<div aria-hidden="true" class="modal-overlay" id="modal-my-skill">
+<div class="modal-content" style="max-width: 520px;">
+<div class="modal-header">
+<div class="modal-title" id="my-skill-modal-title">
+<span>➕</span> Add Skill to Portfolio
+        </div>
+<button class="close-btn" id="close-my-skill-modal">×</button>
+</div>
+<form id="form-my-skill">
+<div class="modal-body">
+<div class="form-group">
+<label class="form-label" for="my-skill-name-input">Skill Name *</label>
+<input autocomplete="off" class="form-control" id="my-skill-name-input" placeholder="Enter a skill you know (e.g. Python, Machine Learning, SQL)..." required="" type="text"/>
+<div style="font-size:0.75rem;color:var(--text-muted);margin-top:6px;">Type the skill in your own words. The system will normalize it for matching.</div>
+</div>
+<div class="form-group">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+<label class="form-label" for="my-skill-prof-slider" style="margin-bottom: 0;">Proficiency Level (1–10) *</label>
+<span id="my-skill-prof-val-display" style="font-weight: 800; color: var(--primary); font-size: 1.1rem;">8/10</span>
+</div>
+<input class="range-slider" id="my-skill-prof-slider" max="10" min="1" style="width: 100%;" type="range" value="8"/>
+<div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">
+<span>Beginner (1–4)</span>
+<span>Intermediate (5–7)</span>
+<span>Advanced / Expert (8–10)</span>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" id="btn-cancel-my-skill-modal" type="button">Cancel</button>
+<button class="btn btn-primary" id="btn-save-my-skill" type="submit">Save to Portfolio</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Container -->
+<div id="toast-container"></div>
+<!-- Application Coordinator Script -->
+<script src="js/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+FINAL SAMPLE DATA FIX
+
+Problem fixed:
+Registered admin accounts could load the 20 sample students, but the 4 sample projects did not appear when clicking Load Sample Projects & Students.
+
+Root cause:
+The preset project IDs (preset-1 ... preset-4) are already owned by the built-in demo admin. The database correctly prevented a registered admin from taking ownership of those same global IDs.
+
+Fix:
+Sample projects now receive stable account-scoped IDs when loaded by a registered admin. This makes the 4 sample projects persist correctly for that account while keeping the existing project contents, student loading, team optimization, demo account, and other functionality unchanged. Repeated loading refreshes/upserts the same account-scoped sample projects instead of creating duplicate projects.

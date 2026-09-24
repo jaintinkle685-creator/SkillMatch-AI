@@ -1,0 +1,13 @@
+SAMPLE STUDENT ACCOUNT FIX
+
+Fixed the sample-student loading issue for registered faculty/admin accounts.
+
+Cause: the demo sample students used fixed database IDs. When a logged-in
+registered account tried to load them, those IDs could already belong to the
+demo account, so the database rejected the insert/update and the cohort stayed
+empty.
+
+Fix: sample students now receive deterministic account-scoped IDs before being
+persisted. Demo and every registered faculty/admin account can therefore load
+the full sample cohort independently and persist it across navigation/reload.
+No other project behavior was intentionally changed.
