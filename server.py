@@ -540,10 +540,11 @@ def serve_static(filename):
     # SPA fallback to index.html
     return send_from_directory(BASE_DIR, "index.html")
 
-def run_server(port=PORT):
-    print(f"[*] SkillMatch AI Flask Server running at http://127.0.0.1:{port}")
+def run_server(port=None):
+    port = int(os.environ.get("PORT", port or PORT))
+    print(f"[*] SkillMatch AI Flask Server running on port {port}")
     print(f"[*] SQLite Database: {database.DB_FILE}")
-    app.run(host="127.0.0.1", port=port, debug=False)
+    app.run(host="0.0.0.0", port=port, debug=False)
 
 if __name__ == "__main__":
     port = int(sys.argv[1]) if len(sys.argv) > 1 else PORT
