@@ -1,0 +1,21 @@
+# Local Python/runtime files
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Local SQLite runtime database (do not commit user/demo session data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Local logs / OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/

@@ -1,0 +1,738 @@
+/* Print & PDF Layout Stylesheet for SkillMatch Academic Reports */
+
+@page {
+  size: A4 portrait;
+  margin: 10mm 12mm 12mm 12mm;
+}
+
+@media print {
+  /* Hide all non-printable application elements */
+  .app-sidebar,
+  .top-header,
+  .header-right,
+  .page-header,
+  .no-print,
+  #toast-container,
+  .modal-overlay,
+  .btn,
+  .nav-badge,
+  .quick-gen-bar {
+    display: none !important;
+  }
+
+  /* Force clean white print canvas */
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.45 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #app-container, .main-wrapper, .page-container, .content-area {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    background: #ffffff !important;
+  }
+
+  /* Hide all view panels except the reports dashboard */
+  .view-panel {
+    display: none !important;
+  }
+
+  #view-reports {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  #printable-academic-report {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+  }
+
+  /* Clean Academic Letterhead Header */
+  .print-header {
+    display: block !important;
+    border-bottom: 2.5px solid #0f172a !important;
+    padding-bottom: 16px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .print-header h2 {
+    color: #0f172a !important;
+    font-size: 16pt !important;
+    font-weight: 800 !important;
+  }
+
+  .print-header .badge {
+    border: 1.5px solid #0f172a !important;
+    color: #0f172a !important;
+    background: #f8fafc !important;
+    font-weight: 800 !important;
+  }
+
+  /* Section Title styling */
+  .report-section-title {
+    font-size: 11.5pt !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    border-bottom: 1.5px solid #cbd5e1 !important;
+    padding-bottom: 6px !important;
+    margin-bottom: 10px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+  }
+
+  /* Table design for crisp PDF rendering */
+  .academic-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 8px !important;
+    margin-bottom: 14px !important;
+    font-size: 8.8pt !important;
+  }
+
+  .academic-table th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    border: 1px solid #94a3b8 !important;
+    padding: 6px 8px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 7.8pt !important;
+    letter-spacing: 0.03em !important;
+  }
+
+  .academic-table td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 8px !important;
+    color: #1e293b !important;
+    vertical-align: middle !important;
+  }
+
+  .academic-table tr:nth-child(even) {
+    background-color: #f8fafc !important;
+  }
+
+  /* Badges & Tags in Print */
+  .badge, .score-bubble, .skill-pill {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .rep-member-item {
+    border-bottom: 1px dashed #cbd5e1 !important;
+    padding: 3px 0 !important;
+  }
+
+  .rep-member-role-badge {
+    background: #eff6ff !important;
+    color: #1d4ed8 !important;
+    border: 1px solid #bfdbfe !important;
+    font-size: 7.5pt !important;
+  }
+
+  .rep-member-gpa-badge {
+    background: #ecfdf5 !important;
+    color: #047857 !important;
+    border: 1px solid #a7f3d0 !important;
+    font-size: 7.5pt !important;
+  }
+
+  /* Avoid page breaks inside important sections */
+  .print-header,
+  .print-signatures-block,
+  .print-signatures,
+  .seal-container,
+  .rep-audit-summary-box {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .report-section {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .academic-table {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .academic-table tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-signatures-block {
+    margin-top: 36px !important;
+    padding-top: 14px !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Signatures block */
+  .print-signatures {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    margin-top: 20px !important;
+    padding-top: 10px !important;
+    break-inside: avoid !important;
+  }
+
+  .sig-block {
+    text-align: center !important;
+    width: 175px !important;
+    border-top: 1.5px solid #334155 !important;
+    padding-top: 6px !important;
+    font-size: 8pt !important;
+    font-weight: 600 !important;
+  }
+
+  .sig-block span {
+    font-weight: 700 !important;
+    color: #0f172a !important;
+  }
+
+  .sig-block small {
+    color: #475569 !important;
+    display: block !important;
+    margin-top: 2px !important;
+  }
+
+  /* Accreditation Seal */
+  .rep-seal-stamp {
+    border: 2.5px double #1e40af !important;
+    color: #1e40af !important;
+    background: #f0f7ff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+
+/* Phase 3: complete A4 report pagination and readable administrative tables */
+@media print {
+  #printable-academic-report {
+    display: block !important;
+    visibility: visible !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+  }
+
+  #printable-academic-report * {
+    visibility: visible !important;
+  }
+
+  .report-content, .report-section, .table-responsive {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  .report-section {
+    margin-bottom: 18px !important;
+  }
+
+  .print-signatures-block, .official-sig-table {
+    display: table !important;
+    width: 100% !important;
+  }
+
+  .official-sig-table td {
+    width: 33.33% !important;
+    min-height: 95px !important;
+    height: 95px !important;
+    vertical-align: top !important;
+  }
+
+  .official-sig-table .signature-line,
+  .official-sig-table td > div:last-child {
+    white-space: nowrap !important;
+  }
+
+  .report-section-title {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+}
+
+/* Final PDF corrections: omit the algorithmic audit from the printed report,
+   and keep institutional signatures/date fully visible and wrapped on A4. */
+@media print {
+  .no-print-pdf { display: none !important; }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm 14mm 10mm;
+  }
+
+  #printable-academic-report {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  .print-header {
+    margin-bottom: 14px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .print-header > div:first-child {
+    gap: 10px !important;
+  }
+
+  .report-content {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .report-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .official-sig-table {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-collapse: collapse !important;
+  }
+
+  .official-sig-table th,
+  .official-sig-table td {
+    width: 33.333% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    white-space: normal !important;
+  }
+
+  .official-sig-table th {
+    font-size: 7.2pt !important;
+    line-height: 1.25 !important;
+    padding: 5px 6px !important;
+  }
+
+  .official-sig-table td {
+    font-size: 7.7pt !important;
+    line-height: 1.3 !important;
+    padding: 7px 7px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    vertical-align: top !important;
+  }
+
+  .official-sig-table strong,
+  .official-sig-table span,
+  .official-sig-table div {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+  }
+
+  .official-sig-table td > div[style*="min-height"] {
+    min-height: 38px !important;
+    height: 38px !important;
+  }
+
+  .print-signatures-block {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 18px !important;
+    padding-top: 10px !important;
+    overflow: visible !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-signatures-block .table-responsive {
+    display: block !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  #rep-report-date {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .print-signatures-block > div:last-child {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: 30px !important;
+    padding: 7px 9px !important;
+    margin-top: 8px !important;
+    overflow: visible !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Keep report tables inside the printable page width. */
+  .academic-table {
+    max-width: 100% !important;
+    table-layout: fixed !important;
+  }
+
+  .academic-table th,
+  .academic-table td {
+    overflow-wrap: anywhere !important;
+  }
+}
+
+/* Final academic PDF pagination correction: keep the complete team roster
+   readable and place the institutional authorization/signature section on a
+   dedicated final page instead of allowing it to be pushed out/clipped. */
+@media print {
+  #rep-teams-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    font-size: 7.8pt !important;
+  }
+
+  #rep-teams-table thead {
+    display: table-header-group !important;
+  }
+
+  #rep-teams-table tbody {
+    display: table-row-group !important;
+  }
+
+  #rep-teams-table tr.report-team-row {
+    display: table-row !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  #rep-teams-table th,
+  #rep-teams-table td {
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  #rep-teams-table th:nth-child(1),
+  #rep-teams-table td:nth-child(1) { width: 13% !important; }
+  #rep-teams-table th:nth-child(2),
+  #rep-teams-table td:nth-child(2) { width: 47% !important; }
+  #rep-teams-table th:nth-child(3),
+  #rep-teams-table td:nth-child(3) { width: 9% !important; }
+  #rep-teams-table th:nth-child(4),
+  #rep-teams-table td:nth-child(4) { width: 10% !important; }
+  #rep-teams-table th:nth-child(5),
+  #rep-teams-table td:nth-child(5) { width: 10% !important; }
+  #rep-teams-table th:nth-child(6),
+  #rep-teams-table td:nth-child(6) { width: 11% !important; }
+
+  #rep-teams-table .report-team-name {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    font-size: 8.2pt !important;
+  }
+
+  #rep-teams-table td:nth-child(2) span {
+    white-space: normal !important;
+    display: inline !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Never cut the official authorization block off at the bottom of a page. */
+  .print-signatures-block {
+    break-before: page !important;
+    page-break-before: always !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-top: 0 !important;
+    padding-top: 12px !important;
+  }
+
+  .official-sig-table {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .official-sig-table tr,
+  .official-sig-table td,
+  .official-sig-table th {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .official-sig-table td > div[style*="min-height"] {
+    min-height: 48px !important;
+    height: 48px !important;
+  }
+
+  .print-signatures-block > div:last-child {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+/* FINAL PDF LAYOUT — compact A4 report matching the approved academic format.
+   Section 3 and Section 4 are deliberately kept in one continuous final-page
+   flow; no artificial page break is inserted between teams and signatures. */
+@media print {
+  @page { size: A4 portrait; margin: 7mm 8mm 9mm 8mm; }
+
+  html, body {
+    font-size: 7.2pt !important;
+    line-height: 1.28 !important;
+  }
+
+  #printable-academic-report {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .print-header {
+    padding-bottom: 7px !important;
+    margin-bottom: 9px !important;
+    border-bottom-width: 1.5px !important;
+  }
+  .print-header h2 { font-size: 11pt !important; }
+  .print-header .badge { font-size: 6.7pt !important; }
+  .print-header > div:first-child { gap: 6px !important; }
+  .print-header .brand-logo-icon { display: none !important; }
+
+  .print-header [style*="grid-template-columns"] {
+    margin-top: 7px !important;
+    padding: 6px 8px !important;
+    gap: 5px !important;
+    font-size: 6.7pt !important;
+  }
+
+  .report-section { margin-bottom: 7px !important; }
+  .report-section-title { font-size: 8.8pt !important; line-height: 1.15 !important; padding-bottom: 3px !important; margin-bottom: 5px !important; }
+
+  /* Keep the competency audit compact enough to leave room for the complete
+     team roster and institutional authorization on the same final page. */
+  #rep-skill-gap-summary { font-size: 6.7pt !important; line-height: 1.25 !important; }
+  #rep-skill-gap-summary > div:first-child { padding: 5px 7px !important; margin-bottom: 5px !important; }
+  #rep-skill-gap-summary .academic-table { font-size: 6.25pt !important; margin-top: 3px !important; margin-bottom: 5px !important; }
+  #rep-skill-gap-summary .academic-table th { font-size: 5.8pt !important; padding: 3px 4px !important; }
+  #rep-skill-gap-summary .academic-table td { padding: 3px 4px !important; }
+  #rep-skill-gap-summary .badge { font-size: 5.8pt !important; padding: 1px 4px !important; }
+
+  /* Section 3 always starts cleanly, but Section 4 must immediately follow it. */
+  #rep-section-3 {
+    break-before: page !important;
+    page-break-before: always !important;
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+  }
+  #rep-section-4 {
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-top: 6px !important;
+    padding-top: 6px !important;
+  }
+
+  #rep-section-3 > div:first-child { padding-bottom: 4px !important; margin-bottom: 5px !important; }
+  #rep-section-3 .report-section-title { font-size: 8.7pt !important; }
+  #rep-teams-summary-badge { font-size: 6.3pt !important; line-height: 1.2 !important; }
+
+  #rep-teams-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    font-size: 6.25pt !important;
+    margin: 0 !important;
+  }
+  #rep-teams-table th {
+    font-size: 5.8pt !important;
+    line-height: 1.15 !important;
+    padding: 3px 4px !important;
+  }
+  #rep-teams-table td {
+    padding: 3px 4px !important;
+    line-height: 1.16 !important;
+    vertical-align: middle !important;
+  }
+  #rep-teams-table th:nth-child(1), #rep-teams-table td:nth-child(1) { width: 12% !important; }
+  #rep-teams-table th:nth-child(2), #rep-teams-table td:nth-child(2) { width: 48% !important; }
+  #rep-teams-table th:nth-child(3), #rep-teams-table td:nth-child(3) { width: 9% !important; }
+  #rep-teams-table th:nth-child(4), #rep-teams-table td:nth-child(4) { width: 10% !important; }
+  #rep-teams-table th:nth-child(5), #rep-teams-table td:nth-child(5) { width: 10% !important; }
+  #rep-teams-table th:nth-child(6), #rep-teams-table td:nth-child(6) { width: 11% !important; }
+
+  #rep-teams-table .report-team-row { break-inside: avoid !important; page-break-inside: avoid !important; }
+  #rep-teams-table .report-team-name {
+    white-space: nowrap !important;
+    font-size: 6.8pt !important;
+    font-weight: 800 !important;
+  }
+  #rep-teams-table .report-team-name div { font-size: 5.8pt !important; margin-top: 1px !important; }
+  #rep-teams-table td:nth-child(n+3) { font-size: 6.8pt !important; }
+
+  .rep-team-member {
+    display: block !important;
+    white-space: normal !important;
+    margin: 0 0 1px 0 !important;
+    line-height: 1.15 !important;
+  }
+  .rep-team-bullet { display: inline !important; margin-right: 2px !important; }
+  .rep-team-roll {
+    font-size: 5.7pt !important;
+    padding: 0 2px !important;
+    background: #f1f5f9 !important;
+    border: 1px solid #cbd5e1 !important;
+    white-space: nowrap !important;
+  }
+  .rep-team-member-name { font-size: 6.1pt !important; margin: 0 1px !important; }
+  .rep-team-member-role { font-size: 5.7pt !important; color: #475569 !important; }
+
+  /* Institutional authorization is part of the report, not a detached page. */
+  #rep-section-4 > div:first-child {
+    font-size: 7.6pt !important;
+    margin-bottom: 5px !important;
+  }
+  #rep-section-4 .table-responsive { margin-bottom: 5px !important; overflow: visible !important; }
+  .official-sig-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    font-size: 6.1pt !important;
+    margin: 0 !important;
+  }
+  .official-sig-table th {
+    font-size: 5.8pt !important;
+    padding: 3px 4px !important;
+    line-height: 1.15 !important;
+  }
+  .official-sig-table td {
+    font-size: 6pt !important;
+    padding: 4px 5px !important;
+    line-height: 1.15 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .official-sig-table td > div[style*="min-height"] {
+    min-height: 22px !important;
+    height: 22px !important;
+    padding-top: 3px !important;
+  }
+  .official-sig-table #rep-sig-img-coordinator,
+  .official-sig-table #rep-sig-img-hod,
+  .official-sig-table #rep-sig-img-dean {
+    font-size: 7.5pt !important;
+  }
+  .official-sig-table td > div:last-child { font-size: 5.5pt !important; margin-top: 2px !important; }
+
+  #rep-section-4 > div:last-child {
+    font-size: 6pt !important;
+    line-height: 1.15 !important;
+    padding: 4px 6px !important;
+    margin-top: 4px !important;
+    min-height: 0 !important;
+  }
+
+  /* Do not let a team row be split, and repeat the table heading if a future
+     unusually large cohort requires another page. */
+  #rep-teams-table thead { display: table-header-group !important; }
+  #rep-teams-table tbody { display: table-row-group !important; }
+}
+
+/* FINAL ROOT FIX — allow the entire report to paginate beyond the application's
+   100vh scrolling workspace. Without this, Chrome can clip content that comes
+   after the team roster (including the institutional names, signatures and date). */
+@media print {
+  html, body {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  #app-container,
+  .main-wrapper,
+  .page-container,
+  .content-area,
+  #view-reports,
+  #printable-academic-report,
+  .report-content {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* The authorization section must never be clipped by the app viewport. It
+     may move to the next printed page when necessary, while its own table and
+     date remain intact. */
+  #rep-section-4 {
+    display: block !important;
+    visibility: visible !important;
+    overflow: visible !important;
+    max-height: none !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  #rep-section-4 .official-sig-table {
+    display: table !important;
+    visibility: visible !important;
+    overflow: visible !important;
+    max-height: none !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  #rep-section-4 .official-sig-table tr,
+  #rep-section-4 .official-sig-table td,
+  #rep-section-4 .official-sig-table th,
+  #rep-section-4 > div:last-child {
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+
+  /* Keep the three authorization columns together and ensure the actual
+     coordinator/HOD/Dean names are never collapsed or clipped. */
+  #rep-section-4 .official-sig-table td {
+    vertical-align: top !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  #rep-sig-teacher-name,
+  #rep-sig-hod-name,
+  #rep-sig-dean-name,
+  #rep-sig-teacher-desig,
+  #rep-sig-hod-dept,
+  #rep-sig-dean-college,
+  #rep-sig-img-coordinator,
+  #rep-sig-img-hod,
+  #rep-sig-img-dean,
+  #rep-report-date {
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  #rep-report-date {
+    white-space: nowrap !important;
+  }
+}

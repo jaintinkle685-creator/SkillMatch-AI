@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: skillmatch-ai
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT server:app
+    # Free Render web services have an ephemeral filesystem, so do not
+    # configure a paid persistent disk here. SQLite remains suitable for a
+    # temporary/demo deployment; its data may reset after restarts/redeploys.
+    envVars:
+      - key: SKILLMATCH_DB_PATH
+        value: skillmatch.db
